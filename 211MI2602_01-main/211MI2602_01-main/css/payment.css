@@ -1,0 +1,252 @@
+html,
+body {
+    font-family: quicksand;
+    font-size: 14px;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.box {
+    border: 1px solid rgba(0, 0, 0, .125);
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: quicksand, sans-serif;
+}
+
+.box1 {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    padding: 35px;
+}
+
+hr {
+    border: #C4C4C4 solid 0.2px;
+}
+
+.row-title {
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    /* font-family: quicksand, sans-serif; */
+}
+
+.address .btn {
+    float: right;
+}
+
+.address,
+.product {
+    margin-bottom: 30px;
+}
+
+.address-content,
+.bill-content {
+    display: flex;
+    padding-top: 15px;
+}
+
+.bill {
+    height: 465px;
+}
+
+.address-content>p:first-child,
+.bill-content>p:first-child {
+    min-width: 150px;
+}
+
+.bill-content>p:last-child {
+    text-align: right;
+    width: 400px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.btn {
+    height: 40px;
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+}
+
+.checkbox {
+    margin: 35px;
+}
+
+.checkbox,
+.radio {
+    height: 18px;
+    width: 18px;
+    margin-top: 5px;
+}
+
+.radio_content {
+    padding-top: 0;
+}
+
+.product-container:hover {
+    background-color: rgba(246, 243, 243, 0.7);
+}
+
+.product-img {
+    text-align: center;
+}
+
+.product-img img {
+    width: 150px;
+    height: 150px;
+}
+
+.product-name {
+    color: rgba(0, 0, 0, 0.75);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.material-icons {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+.img-icon {
+    width: 20px;
+    height: 20px;
+    padding-top: 0;
+    margin: 0 10px;
+}
+
+.pagination {
+    margin: 0;
+}
+
+.pagination>li>button {
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.pagination>li>input {
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.page-link i {
+    font-size: 10px;
+}
+
+.quantity_container {
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.quantity-container input {
+    width: 50px;
+    text-align: center;
+}
+
+.discount {
+    margin-bottom: 20px;
+}
+
+.mg15 {
+    margin-bottom: 20px;
+}
+
+.discount input {
+    width: 100%;
+    margin: 15px 0;
+    height: 35px;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.discount span {
+    line-height: 30px;
+    vertical-align: middle;
+}
+
+.modal-footer a {
+    color: white;
+}
+
+
+/* The popup form */
+
+#myForm {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    z-index: 100;
+    font-family: quicksand, sans-serif;
+}
+
+.form-container {
+    width: 500px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.form-container h4 {
+    text-align: center;
+}
+
+.form-container input[type=text] {
+    width: 100%;
+    height: 30px;
+    padding: 15px;
+    border: none;
+    background: #f1f1f1;
+    margin-bottom: 10px;
+}
+
+.form-container input[type=text]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.form-container select {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.form-container .btn {
+    width: 100%;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .box,
+    .box1 {
+        padding: 15px;
+    }
+    .product-container.box {
+        box-shadow: none;
+    }
+    .product-detail {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 990px) {
+    .box,
+    .box1 {
+        width: 100%;
+    }
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog_Detail</title>
+    <!--w3 js -->
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+
+    <!--Import font Quicksand -->
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+
+    <!--Import font awesome -->
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+
+    <!--Boostrap -->
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/blog.css">
+    <link rel="stylesheet" href="../css/blog_detail.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js?fbclid=IwAR08_prufY-iqEwc4vj1AH9zaGtEQE8BUcawjBQlvBYWNWNHI_JaxzGpH30"></script>
+    <script type="text/javascript" src="../javascript/render-blog.js"></script>
+    <script type="text/javascript" src="../javascript/dirPagination.js"></script>
+</head>
+
+<body ng-app="AngularApp" ng-controller="DetailController" style="font-family: quicksand, sans-serif;">
+    <!-- topbar -->
+    <div w3-include-html="topbar.html"></div>
+
+    <!-- header -->
+    <div w3-include-html="header.html"></div>
+
+    <!-- navbar -->
+    <div class="sticky" w3-include-html="navbar.html"></div>
+
+    <div class="container">
+        <div class="row">
+            <div class="entry-content">
+                <h1 class="entry-title "><b>{{selectProduct.name}}</b></h1>
+                <div class="entry-thumbnail">
+                    <p> <img src="{{selectProduct.image}}" class="img-thumbnail" loading="lazy"> </p>
+                </div>
+                <p>Cũng khá lâu rồi mình chưa viết gì về chủ đề “lối sống tối giản”. So với 1 năm trước thì tần suất đăng các bài viết về “minimalism” có ít hơn một chút, nhưng không có nghĩa là mình không còn theo đuổi lối sống này. Lối sống tối giản không
+                    phải đích đến, mà là một sự khởi đầu, là bàn đạp giúp mình có được một cuộc sống ý nghĩa hơn. Trong hành trình sống tối giản, mình đã nói lời tạm biệt với rất nhiều thứ mà bản thân cảm thấy không còn có giá trị, giữ lại những thứ đem
+                    lại niềm vui (spark joy), và chào đón những điều mới mẻ có ý nghĩa. Khi đó, những gì bản thân muốn chia sẻ không chỉ là những câu chuyện về chủ nghĩa tối giản, mà còn là những câu chuyện hàng ngày, liên quan đến cuộc sống cá nhân,
+                    hay là về những việc làm có ý nghĩa đối với bản thân mình trong thời điểm hiện tại, ví dụ như học thêm một ngoại ngữ, học piano, học cao học, viết blog, làm vlog…</p>
+                <p>Quay lại với nội dung chính, đây sẽ là một bài viết tổng hợp một số câu chuyện về lối sống tối giản, được diễn giải theo dạng trả lời câu hỏi (Q&amp;A) để các bạn dễ hình dung.</p>
+                <p><strong>Mình biết đến lối sống tối giản từ khi nào?&nbsp;</strong></p>
+                <p>Lần đầu tiên mình biết đến “minimalism” đó là khi đọc cuốn sách “Lối sống tối giản của người Nhật” được viết bởi Sasaki Fumio. Đó là vào mùa xuân năm 2018. Trước thời điểm này mình từng trải qua một khoảng thời gian khó khăn về mặt tinh
+                    thần và đang trên con đường thay đổi cách sống để hướng tới một cuộc sống tốt đẹp hơn. Đúng lúc đó mình biết về minimalism. Và lúc đó, mình tin rằng lối sống tối giản sẽ là kim chỉ nam hướng mình đến với một cuộc sống có ý nghĩa hơn.</p>
+                <p><img src="https://thehanoichamomile.files.wordpress.com/2020/03/dscf6905.jpg?w=750&amp;h=500" class="img-thumbnail" alt=""></p>
+                <p><strong style="font-size:14px;">Cuộc sống tối giản của mình đã được bao lâu rồi. Sau thời than sống với lối sống mới thì nó có sự khác biệt gì so với cách sống cũ không? </strong></p>
+                <p>Mình sống tối giản cũng đã được hơn 2 năm (từ tháng 03/2018 – 06/2020). Kể từ khi theo đuổi minimalism thì mình nhận thấy bản thân có sự thay đổi rất nhiều về suy nghĩ và cách nhìn nhận cuộc sống xung quanh. So với ngày trước, hiển nhiên
+                    là bây giờ mình sống gọn gàng, ngăn nắp hơn. Mình mạnh dạn nói lời tạm biệt với những món đồ không còn đem lại giá trị và niềm vui, điều mà trước đây mình gần như không bao giờ làm.</p>
+                <p>Nhưng bên cạnh những yếu tố mang tính vật chất, lối sống tối giản còn ảnh hưởng đến cả đời sống tinh thần của bản thân mình. Suy nghĩ của mình có một chút thay đổi, đặc biệt là trong mối quan hệ, hay trong các sự lựa chọn mang tính phi
+                    vật chất, ví dụ như công việc. Mình biết đâu là công việc cần phải ưu tiên, và đâu là thứ cần phải loại bỏ hoặc gạt đi trong đầu.</p>
+                <p><strong>Việc lựa chọn cuộc sống như vậy thì thời gian đầu mình phải từ bỏ những gì và tiếp nhận cái mới gì. Nó có khó khăn với mình không</strong></p>
+                <p>Hồi mới bắt đầu lối sống tối giản, /mình vẫn đang đi du học Nhật nên cũng được tự do quyết định về cuộc sống và căn phòng của chính bản thân mình. Khác với nhiều bạn trẻ, mình không gặp trở ngại từ phía gia đình, cũng như không gặp khó
+                    khăn trong việc thay đổi lối sống, đặc biệt là trong việc áp dụng những quy tắc của lối sống tối giản, ví dụ như vứt bỏ đồ đạc.</p>
+                <p><strong>Đối với lối sông tối giản thì nguyên tắc mỗi ngày, mỗi tuần và mỗi tháng của mình như thế nào</strong></p>
+                <p>Sau hơn 2 năm sống tối giản thì mình cũng đã xây dựng được một chuỗi các nguyên tắc mang tính hệ thống, để từ đó giúp mình hạn chế việc suy nghĩ và băn khoăn trong lựa chọn, cũng như tối ưu hoá được năng suất học tập và làm việc của một
+                    ngày. Để hạn chế được chứng “mệt mỏi vì băn khoăn lựa chọn” (decision fatigue), mình thiết lập các thói quen nhỏ, và điều này giúp mình thực hiện được rất nhiều việc mà không phải tốn năng lượng suy nghĩ xem có nên làm việc đó hay
+                    không. Ví dụ điển hình là thói quen buổi sáng, bao gồm thiền 5 phút, tập yoga và viết nhật ký. 2 năm nay mình vẫn luôn duy trì việc dậy sớm mỗi ngày, thực hiện các thói quen nhỏ bản thân đã đề ra. Buổi tối trước khi đi ngủ mình cũng
+                    thiết lập kế hoạch cho ngày hôm sau, sử dụng Google Calendar để xác định khung giờ thực hiện các công việc, và chỉ việc tuân theo những gì bản thân đã thiết lập từ tối hôm trước. Tất cả những nguyên tắc này đều xuất phát từ mong muốn
+                    giảm thiểu tối đa thời gian nghĩ ngợi và băn khoăn, và dành năng lượng cho việc tận hưởng và đón nhận những niềm vui khác trong ngày.</p>
+                <p><strong style="font-size:14px;">Về căn nhà, phòng của mình sẽ bày trí ra sao</strong></p>
+                <p>Khi nói về lối sống tối giản, nhiều người có lẽ sẽ hình dung đến khung cảnh một căn phòng trắng toát, trống trơn, gần giống với căn phòng của Sasaki Fumio. Đó là một căn phòng tối giản. Nhưng không phải căn phòng nào cũng như vậy. Bởi
+                    vì mỗi người đều có một cách nhìn nhận khác nhau về minimalism, về không gian xung quanh, về thế nào là ít.</p>
+                <p>Đối với mình, tối giản không nhất thiết phải là vứt hết đồ đạc. Trong phòng mình có hai điểm nhấn lớn, đó là tủ sách và bàn làm việc. Là một minimalist nhưng mình vẫn tích cực mua sách, và sắp xếp gọn gàng trên tủ, bởi sách là niềm vui
+                    của mình, và mỗi lần bước vào phòng, mình luôn cảm nhận được một năng lượng tích cực phát ra từ chiếc tủ sách. Bên cạnh đó, chiếc bàn làm việc dài gần 2m của mình cũng là một “chốn linh thiêng”, nơi mình dùng để học và làm việc, để
+                    viết blog và edit vlog,… Mặc dù bàn rộng rãi nhưng mình cố gắng chỉ đặt một số món đồ thiết yếu trên mặt bàn, ví dụ như laptop, màn hình, chuột, bàn phím, và thêm vào đó là một chậu cây xanh. Ngoài tủ sách và chiếc bàn ra thì mình
+                    cũng có để một số đồ gia dụng khác như bàn café, tủ đồ, nhưng nhìn chung là mình hạn chế lấp đầy các khoảng trống trong phòng, để giúp căn phòng luôn thoãng đãng và mang chất “minimalist”.</p>
+                <p><img src="https://thehanoichamomile.files.wordpress.com/2020/07/abf16a96-932a-42fe-bf08-26285a9379a0-4567745b-0fc1-40a2-8492-78817bffe73c.jpg?w=750&amp;h=499" class="img-thumbnail" alt=""></p>
+                <p><strong style="font-size:14px;">Lối sống tối giản nó tác động đến tinh thần, góc nhìn cuộc sống của mình như thế nào ? &nbsp;</strong></p>
+                <p>Mình muốn trích một câu viết trong cuốn sách “Một cuốn sách về chủ nghĩa tối giản” của chị Chi Nguyễn: “<strong><em>Khi bắt đầu tối giản hoá cuộc sống, dù ít hay nhiều, bạn sẽ phải đặt ra cho mình những câu hỏi về sự lựa chọn và ưu tiên – đâu là thứ cần thiết cho cuộc sống, đâu là thứ thừa thãi nên buông bỏ; và tự nhiên, tư duy của bạn sẽ thay đổi, đa chiều hơn và sâu sắc hơn. Quá trình ấy, một cách âm thầm, sẽ làm chậm guồng quay cuộc sống hàng ngày của bạn lại một vài nhịp</em></strong><strong>”<em>.</em> (Trang 101). </strong></p>
+                <p>Những dòng viết của chị Chi diễn giải rất đúng quy trình thay đổi trong tư duy của chính bản thân mình. Đến một thời điểm, mình nhận thấy trong đầu mình luôn có sẵn một câu hỏi “liệu nó có thực sự quan trọng không?”. Câu hỏi này đã được
+                    mình sử dụng cho việc lựa chọn và loại bỏ những thứ mang tính vật chất, hữu hình như đồ đạc, quần áo nhưng dần dần mình cũng sử dụng câu hỏi này cho cả những điều liên quan đến mặt tinh thần. Một trong những ví dụ điển hình, đó là
+                    chính là sự lựa chọn giữa quá khứ, hiện tại và tương lai. Liệu quá khứ và tương lai có quan trọng hơn cuộc sống hiện tại? Liệu mình cần ưu tiên nghĩ về khoản thời gian nào hơn? Đó là những suy nghĩ mà mình dần có được sau một thời
+                    gian sống tối giản. Nghĩ lại thì nó cũng thật là kì diệu. Những ngày đầu khi mới bắt tay vào việc vứt bỏ đồ đạc, những gì mình nghĩ đến chỉ là một cuộc sống gọn gàng thoải mái, chứ thú thật là mình không hề nghĩ gì đến chuyện sống
+                    cho hiện tại. Nếu mà quay lại thời điểm trước khi sống tối giản mà có ai đó nói với mình “hãy sống cho hiện tại!”, mình sẽ cảm thấy những câu nói đó thật là trừu tượng và mĩ miều làm sao. Nhưng khi đã trải nghiệm lối sống tối giản
+                    thì mình mới cảm nhận được điều đó. Và giờ đến lượt mình là người luôn miệng nói “be present”.</p>
+                <p><strong>Mình rút ra được từ triết lý cuộc sống gì từ lối sống tối giản này</strong></p>
+                <p>Có lẽ phải thực sự trải nghiệm cuộc sống của một minimalist thì bạn mới có thể nhận thấy được <strong>lối sống tối giản nó giống như là một sự khởi đầu hơn là kết thúc</strong>. Lối sống tối giản đối với mình nó giống như một nền tảng,
+                    một tiền đề giúp bản thân hướng tới một cuộc sống mới ý nghĩa hơn. Một cuộc sống gọn gàng, ít đồ đạc giúp bản thân không tốn quá nhiều năng lượng vào việc suy nghĩ xem nên lựa chọn cái nào,… Đó là những điều tích cực mà ai cũng có
+                    thể cảm nhận thấy. Nhưng không chỉ dừng lại ở đó, nhờ sống tối giản mà mình bắt đầu có ý thức về việc xây dựng thói quen, có một tư duy và cái nhìn sâu sắc hơn về cuộc sống xung quanh, để rồi đưa ra một hướng đi, một cách sống mới
+                    để có thể giúp bản thân trải nghiệm cuộc sống một cách có ý nghĩa nhất.</p>
+                <p><strong style="font-size:14px;">Nhiều người cho rằng chọn lối sống tối giản là từ bỏ nhiều thứ, sống khép kín, ẩn dật thì điều đó với mình có đúng không</strong></p>
+                <p>Mình nghĩ việc chọn lối sống tối giản đúng là sẽ vừa giúp bạn, nhưng cũng khiến bạn phải từ bỏ nhiều thứ. Lối sống tối giản đúng là sẽ mang đến một cuộc sống có phần khép kín hơn, nhưng không có nghĩa là người đó sẽ hoàn toàn xa lánh khỏi
+                    bạn bè, người thân xung quanh. Kể từ khi sống tối giản, cuộc sống của mình phần nào trở nên điềm đạm hơn, có phần nội tâm hơn. Nhưng mình không hoàn toàn xa cách xã hội, mà ngược lại, mình nhận ra rằng LSTG đã và đang đem lại cho mình
+                    những năng lượng tích cực, và mình muốn lan toả nguồn năng lượng tích cực này ra bên ngoài. Đó cũng chính là lí do vì sao mình bắt đầu viết blog và làm vlog chia sẻ về cuộc sống hàng ngày của bản thân. Một cuộc sống cá nhân có phần
+                    khép kín, nhưng vẫn cởi mở với bên ngoài, và chính suy nghĩ tối giản giúp mình đưa ra được sự ưu tiên đâu là lúc cần quan tâm đến cuộc sống bản thân, đâu là lúc cần cởi mở và đặt người khác phía trên lợi ích của mình.
+                </p>
+                <p>Hi vọng bài viết này sẽ giúp bạn hiểu thêm về lối sống tối giản, cũng như là cách suy nghĩ của mình về lối sống này.</p>
+                <p>Stay focused, be present,</p>
+                <p>Délicat</p>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-lg-12 container__heading">
+                Các bài viết tương tự
+            </div>
+        </div>
+        <div class="row container__new-post">
+            <div ng-repeat="p in blogs| limitTo : 4:2" class="col-lg-3 container__new-post-item-wrap page">
+                <a href="blog_detail.html?productID={{p.name}}" class="bl">
+                    <div class="container__new-post-item">
+                        <span class="content--box">
+                        <img src="{{p.image}}" class="container__new-post-img">
+                        <div class="container__new-post-content">
+                            <p class="container__new-post-description">{{p.name}}</p>
+                            <p class="container__new-post-time">{{p.date}}</p>
+                        </div>
+                        </span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div w3-include-html="footer.html"></div>
+    <script>
+        w3.includeHTML()
+    </script>
+    <script src="../javascript/search.js "></script>
+</body>
+
+</html>

@@ -1,0 +1,200 @@
+html,
+body {
+    font-family: quicksand;
+    font-size: 14px;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.navpro {
+    margin-top: 35px;
+    margin-left: -10px;
+}
+
+.nav-link-pro {
+    margin-left: 0;
+    font-size: 14px !important;
+    font-weight: lighter !important;
+}
+
+.fa-angle-down {
+    margin-left: 10px;
+    color: rgba(0, 0, 0, 0.55);
+}
+
+.dropdown-content-pro {
+    min-width: 200px !important;
+    margin-left: 5px !important;
+}
+
+.dropdown-content-pro li {
+    padding-left: 0 !important;
+}
+
+.img-user {
+    max-width: 70px;
+    max-height: 70px;
+    margin-top: 10px;
+}
+
+.tk:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.tk {
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.box {
+    border: 1px solid rgba(0, 0, 0, .125);
+    box-sizing: border-box;
+    margin: 15px;
+    padding: 20px;
+    font-family: quicksand, sans-serif;
+}
+
+.box1 {
+    height: 150px;
+}
+
+.row-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.info-row {
+    display: flex;
+}
+
+.info-row>p:first-child {
+    min-width: 150px;
+}
+
+.img-container {
+    text-align: center;
+}
+
+.img-container img {
+    height: 150px;
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.content {
+    border-right: 0.2px solid #C4C4C4;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.btn {
+    height: 40px;
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    /* float: right; */
+}
+
+.gender {
+    display: flex;
+    justify-content: space-between
+}
+
+#img-mobile {
+    display: none;
+}
+
+
+/* The popup form */
+
+#myForm {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    z-index: 100;
+    font-family: quicksand, sans-serif;
+}
+
+.form-container {
+    width: 500px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.form-container h4 {
+    text-align: center;
+}
+
+.form-container input[type=text] {
+    width: 100%;
+    height: 30px;
+    padding: 15px;
+    border: none;
+    background: #f1f1f1;
+    margin-bottom: 10px;
+}
+
+.form-container input[type=text]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.form-container.dob {
+    display: flex;
+}
+
+.form-container.gender {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.dob select {
+    width: 30%;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.dob {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-container .btn {
+    width: 100%;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 575px) {
+    .box1 {
+        display: none;
+    }
+    .content {
+        border-right: 0px
+    }
+    #img-mobile {
+        height: 70px;
+        width: 70px;
+        float: left;
+        display: block;
+    }
+    #img-desktop {
+        display: none;
+    }
+}

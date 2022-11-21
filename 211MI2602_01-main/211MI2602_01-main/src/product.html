@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+
+    <!--Boostrap css -->
+
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.min.css">
+
+    <!--Import font awesome -->
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/product.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js?fbclid=IwAR08_prufY-iqEwc4vj1AH9zaGtEQE8BUcawjBQlvBYWNWNHI_JaxzGpH30"></script>
+
+    <script type="text/javascript" src="../javascript/render-products.js"></script>
+
+    <script type="text/javascript" src="../javascript/dirPagination.js"></script>
+
+    <title>Sản phẩm | DÉlicat</title>
+
+</head>
+
+<body ng-app="AngularApp" ng-controller="DetailController" style="font-family: quicksand, sans-serif;">
+    <!-- topbar -->
+    <div w3-include-html="topbar.html"></div>
+
+    <!-- header -->
+    <div w3-include-html="header.html"></div>
+
+    <!-- navbar -->
+    <div class="sticky" w3-include-html="navbar.html"></div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 navpro">
+                <li class="nav-item dropdown dropdown-pro">
+                    <a class="nav-link" href="product.html">DANH MỤC<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+
+                    <ul class="dropdown-content dropdown-content-pro">
+                        <li class="list-group-item">
+                            <a class="nav-link nav-link-pro" href="#" ng-click="selectCategory0()">Tất cả sản phẩm</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a class="nav-link nav-link-pro" href="#" ng-click="selectCategory3()">Nội thất tiện ích</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a class="nav-link nav-link-pro" href="#" ng-click="selectCategory2()">Phụ kiện trang trí</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a class="nav-link nav-link-pro" href="#" ng-click="selectCategory5()">Cây giả trang trí</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a class="nav-link nav-link-pro" href="#" ng-click="selectCategory1()">Thảm rèm cửa</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a class="nav-link nav-link-pro" href="#" ng-click="selectCategory4()">Vật dụng khác</a>
+                        </li>
+                    </ul>
+                </li>
+            </div>
+        </div>
+
+        <div class="row" ng-hide=type1>
+            <div dir-paginate="p in products | itemsPerPage:1000 | filter:code" class="col-12 col-sm-4 col-md-3 col-lg-2dot4 col-xl-2">
+                <a href="productdetail.html?productID={{p.name}}" class="sp">
+                    <div class="card bestseller--item">
+                        <div class="card-img-container">
+                            <img src="{{p.icon_url}}" class="card-img-top bestseller--item-img">
+                        </div>
+                        <div class="card-body bestseller--item-content">
+                            <p class="card-text bestseller--item-name">{{p.name}}</p>
+                            <p class="card-text bestseller--item-price">{{p.price}}₫</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row" ng-hide=type2>
+            <div dir-paginate="p in products | itemsPerPage:30 | filter:code" class="col-12 col-sm-4 col-md-3 col-lg-2dot4 col-xl-2">
+                <a href="productdetail.html?productID={{p.name}}" class="sp">
+                    <div class="card bestseller--item">
+                        <div class="card-img-container">
+                            <img src="{{p.icon_url}}" class="card-img-top bestseller--item-img">
+                        </div>
+                        <div class="card-body bestseller--item-content" ng-hide=Type>
+                            <p class="card-text bestseller--item-name">{{p.name}}</p>
+                            <p class="card-text bestseller--item-price">{{p.price}}₫</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- </div> -->
+        <div class="quantity-container distance page1">
+            <dir-pagination-controls max-size="4" direction-links="true" boundary-links="true"></dir-pagination-controls>
+        </div>
+    </div>
+    <!-- footer -->
+    <div w3-include-html="footer.html"></div>
+
+    <script>
+        w3.includeHTML()
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+    </script>
+    <script src="../javascript/search.js"></script>
+    </div>
+</body>
+
+</html>

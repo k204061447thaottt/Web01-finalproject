@@ -1,0 +1,356 @@
+html,
+body {
+    font-size: 14px;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.content--box {
+    color: #666666;
+}
+
+.bl:hover {
+    color: #666666;
+    text-decoration: none;
+}
+
+.bl:hover {
+    text-decoration: none;
+}
+
+.page:hover {
+    transform: scale(1.025);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    overflow-y: auto;
+}
+
+
+/* Container */
+
+.container__heading {
+    font-size: 20px;
+    font-family: 'Quicksand';
+    text-align: center;
+    color: #171717;
+}
+
+.card {
+    transition: all .1s ease;
+}
+
+.card img {
+    height: 170px;
+}
+
+.card:hover {
+    transform: scale(1.015);
+}
+
+.container__new-post-item,
+.container__post-special-item {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.container__new-post-img {
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+}
+
+.container__new-post-content {
+    margin-top: 14px;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.container__new-post-description {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    max-width: 300px;
+    text-align: center;
+    display: block;
+    margin: 0 auto 10px;
+    padding: 0 1rem;
+    font-family: 'Quicksand';
+}
+
+.container__new-post-time {
+    font-family: 'Quicksand';
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.container__post-wrap {
+    justify-content: space-between;
+}
+
+.container__post-special {
+    margin-bottom: 50px;
+}
+
+.container__post-special-item {
+    padding: 12px;
+}
+
+.container__post-special-img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.post-special {
+    margin-top: 35px;
+}
+
+.post-special img {
+    height: 250px;
+}
+
+.container__post-special-content {
+    padding: 1rem 1.5rem 0;
+}
+
+.container__post-special-heading {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Quicksand';
+    color: #171717;
+}
+
+.container__post-special-time {
+    font-size: 12px;
+    line-height: 15px;
+    color: #666666;
+    display: block;
+    font-weight: 400;
+    font-family: 'Quicksand';
+}
+
+.container__post-time span {
+    color: #ccc;
+}
+
+.container__post-special-description {
+    color: #666666;
+    font-size: 14px;
+    line-height: 22px;
+    font-family: 'Quicksand';
+    font-weight: 400;
+    max-width: 700px;
+    display: block;
+    margin: 0 auto 25px;
+}
+
+
+/* Container main post */
+
+.container__main-post {
+    margin-bottom: 50px;
+}
+
+.container__main-post-item {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 12px;
+}
+
+.container__main-post-img {
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+}
+
+.container__main-post-content {
+    margin: 15px 0 20px 0;
+}
+
+.container__main-post-description {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    max-width: 300px;
+    text-align: center;
+    display: block;
+    margin: 0 auto 10px;
+    font-family: 'Quicksand';
+}
+
+.container__main-post-time {
+    font-family: 'Quicksand';
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 400;
+    text-align: center;
+    color: #666666;
+}
+
+
+/* Container Sidebar */
+
+.container__sidebar {
+    margin-left: 10px;
+}
+
+.container__sidebar-about {
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.container__sidebar-about-btn-wrap {
+    margin-bottom: 30px;
+}
+
+.container__sidebar-title {
+    width: 100%;
+    height: 50px;
+    display: block;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: Quicksand;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: -50px;
+}
+
+.container__sidebar-about-item {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 12px;
+    text-align: center;
+}
+
+.container__sidebar-about-img {
+    width: 100%;
+    object-fit: cover;
+    height: 150px;
+}
+
+.container__sidebar-about-logo {
+    color: #171717;
+    margin: 15px 0;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    font-family: 'Quicksand';
+}
+
+.container__sidebar-about-time {
+    font-size: 14px;
+    line-height: 17.5px;
+    font-family: 'Quicksand';
+    font-weight: 400;
+    color: #b1b1b1;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.container__sidebar-about-description {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Quicksand';
+    line-height: 24px;
+    text-align: center;
+}
+
+.container__sidebar-pro-btn-wrap {
+    margin-bottom: 30px;
+}
+
+.container__sidebar-pro-item-wrap {
+    margin-bottom: 50px;
+}
+
+.container__sidebar-pro-item {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    padding: 12px;
+}
+
+.container__sidebar-pro-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.container__sidebar-pro-content {
+    margin: 15px 0 20px 0;
+}
+
+.container__sidebar-pro-time {
+    font-family: 'Quicksand';
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 400;
+    text-align: center;
+    color: #666666;
+}
+
+
+/* container__pagination */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__pagination {
+    border: 1px solid #e5e5e5;
+    padding: 20px 0;
+    max-width: 600px;
+    margin-left: calc((100% - 600px)/2);
+}
+
+.pagination-item {
+    margin: 0 2px;
+    list-style: none;
+}
+
+.pagination-item__icon {
+    width: 40px;
+    height: 40px;
+}
+
+.pagination-item__link {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: #A2A2A2;
+    min-width: 50px;
+    display: block;
+    text-align: center;
+    line-height: 16px;
+    border-radius: 2px;
+    font-family: 'Quicksand';
+}
+
+.pagination-item--active .pagination-item__link {
+    background-color: var(--main-color);
+    color: #171717;
+}
+
+.container__page {
+    margin: 40px 5px 10px 5px;
+    padding: 5px;
+}
+
+.page {
+    margin-top: 10px;
+}

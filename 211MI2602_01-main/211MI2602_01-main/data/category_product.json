@@ -1,0 +1,24 @@
+[{
+        "id": "",
+        "name": "PHỤ KIỆN TRANG TRÍ",
+        "icon_url": "../img/category_products/PKTT.png",
+        "url": ""
+    }, {
+        "id": "",
+        "name": "NỘI THẤT TIỆN ÍCH",
+        "icon_url": "../img/category_products/NTTI.png",
+        "url": ""
+    },
+    {
+        "id": "",
+        "name": "CÂY CẢNH TRANG TRÍ",
+        "icon_url": "../img/category_products/CCTT.png",
+        "url": ""
+    },
+    {
+        "id": "",
+        "name": "THẢM, RÈM CỬA",
+        "icon_url": "../img/category_products/TRC.png",
+        "url": ""
+    }
+]

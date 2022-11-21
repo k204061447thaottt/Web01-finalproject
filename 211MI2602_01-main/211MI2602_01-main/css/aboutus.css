@@ -1,0 +1,182 @@
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+html,
+body {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.box1,
+.box2 {
+    border: 1px solid rgba(0, 0, 0, .125);
+    box-sizing: border-box;
+    width: 95%;
+    margin: 0 auto;
+    transition: all .1s ease;
+}
+
+.box1:hover,
+.box2:hover,
+.box3:hover {
+    transform: scale(1.01);
+}
+
+.box1 {
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+
+#header1,
+#header2 {
+    margin-top: 80px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#header1 {
+    margin-left: 440px;
+}
+
+.hr1,
+.hr2 {
+    width: 150px;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.hr1,
+#content1 {
+    margin-left: 440px;
+}
+
+#header2,
+.hr2,
+#content2 {
+    margin-left: 50px;
+}
+
+#img1,
+#img2 {
+    width: 400px;
+    height: 300px;
+    margin: 20px;
+}
+
+.up {
+    text-transform: uppercase;
+}
+
+.box3 {
+    background-color: rgba(64, 64, 64, 0.75);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+#content3 {
+    text-align: center;
+    color: white;
+    margin-top: 12px;
+}
+
+#content1,
+#content2 {
+    font-size: 14px;
+}
+
+@media(min-width:768px) and (max-width: 992px) {
+    #header1,
+    #header2 {
+        margin-top: 25px;
+    }
+}
+
+@media(max-width:767px) {
+    #img1,
+    #img2 {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    #header1,
+    #header2 {
+        margin-top: 380px;
+        margin-left: 10%;
+    }
+    .hr1,
+    .hr2 {
+        margin-left: 10%;
+        width: 150px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    #content1,
+    #content2 {
+        margin-left: 10%;
+        text-align: justify;
+        margin-right: 50px;
+        margin-bottom: 50px;
+        margin-right: 10%;
+    }
+}
+
+@media(max-width:580px) {
+    .box1,
+    .box2,
+    .box3 {
+        margin: 30px 10px;
+    }
+    #img1,
+    #img2 {
+        display: none;
+    }
+    .box1 {
+        background-image: url(../img/AboutUs/tranh-sat-nghe-thuat-anh-trang-mo-TS5540-anh5.jpg);
+        background-position: bottom center;
+        box-shadow: none;
+        background-repeat: no-repeat;
+        border: none;
+    }
+    .box2 {
+        background-image: url(../img/AboutUs/tranh-treo-tuong-la-re-quat-bang-sat-cuc-dep.jpg);
+        background-position: center;
+        width: 100%;
+        background-repeat: no-repeat;
+        border: none;
+        box-shadow: none;
+    }
+    #header1,
+    #header2 {
+        margin-top: 50px;
+        color: white;
+        padding-top: 20px;
+    }
+    #content1,
+    #content2 {
+        color: white;
+        padding-bottom: 20px;
+    }
+    .bg {
+        background-color: rgba(64, 64, 64, 0.6);
+    }
+    .hr1,
+    .hr2 {
+        background-color: white;
+        margin: 10px 10%;
+    }
+}
+
+@media(max-width:280px) {
+    .box1,
+    .box2 {
+        height: 440px;
+    }
+}

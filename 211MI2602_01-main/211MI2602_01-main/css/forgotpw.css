@@ -1,0 +1,54 @@
+    html,
+    body {
+        font-size: 14px;
+    }
+    
+    .box {
+        width: 70%;
+        margin: 185px auto;
+        background-color: rgba(0, 0, 0, 0.75);
+        margin-bottom: 145px;
+    }
+    
+    #form-container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #header {
+        text-align: center;
+        font-weight: bold;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        color: white;
+    }
+    
+    #content {
+        text-align: center;
+        color: white;
+    }
+    
+    #fg {
+        border: none;
+        margin: 0 auto;
+        display: block;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    
+    #fg:hover {
+        cursor: pointer;
+    }
+    
+    @media(max-width:540px) {
+        .box {
+            margin: 80px 20px 40px;
+        }
+    }
+    
+    @media(max-width:1024px) {
+        .box {
+            margin-top: 310px;
+            margin-bottom: 310px;
+        }
+    }

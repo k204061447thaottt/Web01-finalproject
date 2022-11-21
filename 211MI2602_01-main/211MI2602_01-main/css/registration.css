@@ -1,0 +1,98 @@
+html,
+body {
+    font-size: 14px;
+}
+
+.box {
+    margin: 70px auto 30px;
+    border: 0.5px solid rgba(131, 121, 121, 0.5);
+    box-sizing: border-box;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+    width: 95%;
+}
+
+#form-container {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#phone,
+#pw,
+#retypepw {
+    width: 100%;
+    border: 1px solid black;
+    height: 30px;
+}
+
+#phone,
+#pw {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#retypepw {
+    margin-top: 10px;
+}
+
+#signin {
+    margin: 20px auto;
+    display: block;
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    border: none;
+    height: 35px;
+    width: 100px;
+}
+
+#or {
+    text-align: center;
+}
+
+.other {
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    border: none;
+    height: 35px;
+    width: 100px;
+    margin-bottom: 30px;
+}
+
+.fb {
+    margin-left: 10px;
+    margin-right: 80px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+@media(max-width:540px) {
+    .box {
+        margin: 15px;
+    }
+}
+
+@media(max-width:320px) {
+    #form-container {
+        width: 220px;
+    }
+    .fb {
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+}
+
+@media(max-width:1024px) {
+    .box {
+        margin-bottom: 185px;
+        margin-top: 200px;
+    }
+}

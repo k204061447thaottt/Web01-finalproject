@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--w3 js -->
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+
+    <!--Import font Quicksand -->
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+
+    <!--Import font awesome -->
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+
+    <!--Boostrap -->
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+
+    <link rel="stylesheet" href="../css/home.css">
+
+    <!--Angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js?fbclid=IwAR08_prufY-iqEwc4vj1AH9zaGtEQE8BUcawjBQlvBYWNWNHI_JaxzGpH30"></script>
+
+    <!--JS -->
+    <script type="text/javascript" src="../javascript/render-products.js"></script>
+    <script type="text/javascript" src="../javascript/dirPagination.js"></script>
+
+    <title>Trang chủ | DÉlicat</title>
+
+</head>
+
+<body ng-app="AngularApp" ng-controller="DetailController" style="font-family: quicksand, sans-serif;">
+    <!-- topbar -->
+    <div w3-include-html="topbar.html"></div>
+
+
+    <!-- header -->
+    <div w3-include-html="header.html"></div>
+
+
+    <!-- navbar -->
+    <div class="sticky" w3-include-html="navbar.html"></div>
+
+
+    <!-- banner -->
+    <div class="slideshow container">
+        <div class="mySlides">
+            <a href="#"><img src="../img/homepage/Christmas Sale Banner.png" style="width:100%"></a>
+        </div>
+        <div class="mySlides">
+            <a href="#"></a><img src="../img/homepage/Christmas Sale Banner 2.png" style="width:100%"></a>
+        </div>
+        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+    </div>
+    <script>
+        /* Change img every 4 seconds */
+        var slideIndex1 = 0;
+        carousel();
+
+        function carousel() {
+            var a;
+            var b = document.getElementsByClassName("mySlides");
+            for (a = 0; a < b.length; a++) {
+                b[a].style.display = "none";
+            }
+            slideIndex1++;
+            if (slideIndex1 > b.length) {
+                slideIndex1 = 1
+            }
+            b[slideIndex1 - 1].style.display = "block";
+            setTimeout(carousel, 4000);
+        }
+
+        /* Change img when click prev, next */
+        var slideIndex = [1, 1];
+        var slideId = ["mySlides"]
+        showSlides(1, 0);
+        showSlides(1, 1);
+
+        function plusSlides(n, no) {
+            showSlides(slideIndex[no] += n, no);
+        }
+
+        function showSlides(n, no) {
+            var i;
+            var x = document.getElementsByClassName(slideId[no]);
+            if (n > x.length) {
+                slideIndex[no] = 1
+            }
+            if (n < 1) {
+                slideIndex[no] = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex[no] - 1].style.display = "block";
+        }
+    </script>
+
+
+    <!-- category -->
+    <div class="container home-category" ng-controller="CategoryController">
+        <div class="row" id="category_row">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3" ng-repeat="c in categorys" style="margin-bottom: 16px;">
+                <a class="sp" href="product.html" ng-click="selectCategory3()">
+                    <div class="category--item">
+                        <img src="{{c.icon_url}}">
+                        <div class="category--item-name">{{c.name}} </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- bestseller -->
+    <div class="container home-bestseller">
+        <h5>#BESTSELLER</h5>
+        <div class="row">
+            <div ng-repeat="p in products | limitTo : 150 | filter:bs" class="col-12 col-sm-4 col-md-3 col-lg-2dot4 col-xl-2">
+                <a href="productdetail.html?productID={{p.name}}" style="text-decoration: none;">
+                    <div class="card bestseller--item">
+                        <div class="card-img-container">
+                            <img src="{{p.icon_url}}" class="card-img-top bestseller--item-img">
+                        </div>
+                        <div class="card-body bestseller--item-content">
+                            <p class="card-text bestseller--item-name">{{p.name}}</p>
+                            <p class="card-text bestseller--item-price">{{p.price}}₫</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- DEbestie -->
+    <div class="container home-debestie">
+        <h5>#DÉBESTIE</h5>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+                <a href="blog.html" style="text-decoration: none;">
+                    <div class="home-debestie-banner">
+                        <img src="../img/homepage/debestie.png" alt="">
+                        <div class="debestie--banner--title">
+                            <h5>DAILY INSPIRATION</h5>
+                            <p>Những không gian đầy cảm xúc DÉ muốn chia sẻ cùng bạn</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-xl-4">
+                <a href="#" style="text-decoration: none;">
+                    <div class="home-debestie-blog">
+                        <img src="../img/blog/1.jpg" alt="">
+                        <div class="home-debestie-blog--title">
+                            <h6>New life</h6>
+                            <p>
+                                Bắt đầu cuộc sống mới bằng việc tổng hợp dọn dẹp căn phòng...
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <div w3-include-html="footer.html"></div>
+
+    <!-- JS includeHTML -->
+    <script>
+        w3.includeHTML()
+    </script>
+    <script src="../javascript/search.js "></script>
+
+</body>
+
+</html>

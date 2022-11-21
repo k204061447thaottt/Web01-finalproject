@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+.footer{
+    padding: 32px 40px 40px 40px;
+    background-color: #E4F7D2;
+}
+.container{
+    max-width: 1170px;
+    margin: auto;
+    font-size: 14px;
+    font-family: roboto;
+    color: #625F5F;
+}
+
+.row1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+h3{
+    font-weight: bold;
+    color: #96CB65;
+    font-size: 20px;
+    margin: 20px 40px 32px 30px  ;
+    letter-spacing: 1px;
+}
+input{
+    min-width: 600px;
+    max-width: 1000px;
+    height: 58px;
+    border-radius: 5px;
+    border:none;
+    padding-left: 15px;
+
+}
+button{
+    max-width:160px ;
+    min-width: 150px;
+    height: 58px;
+    border-radius: 5px;
+    border:none;
+    background-color: #96CB65;
+    color: white;
+
+}
+button > p{
+    font-weight: bold;
+    font-size: 17px;
+}
+
+hr{
+    border: 2px solid;
+    border-color:   white;
+}
+.row2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+h2{
+    color: #96CB65;
+    margin: 0px;
+}
+.footer__col:nth-child(1){
+    flex: 1;
+    padding: 0 30px;
+    /* margin: 49px 129px 92px 98px ; */
+    margin-top: 40px;
+
+}
+.footer__col:nth-child(2){
+    flex: 1;
+    padding: 0 30px;
+    margin-top: 55px;
+
+
+}
+.footer__col:nth-child(3){
+    flex: 0.5;
+    padding: 0 30px;
+    margin-top: 55px;
+}
+.footer__col:nth-child(4){
+    display: flex;
+    flex-direction: column;
+    flex: 1.5;
+    padding: 0 30px;
+    margin-top: 55px;
+
+}
+.link{
+    display: flex;
+}
+.item1>img{
+    height: 5rem;
+    width: 5rem;
+    margin-right: 10px;
+}
+.item2{
+    display: flex;
+    flex-direction: column;
+}
+.item2>img{
+    margin-bottom: 10px;
+    height: 1.5rem;
+    width: 4.25rem;
+}
+
+
+.footer__col > img{
+    width: 200px;
+    height: 48px;
+}
+
+
+ul{
+    padding: 0px;
+}
+li{
+    margin: 16px 0px;
+}
+@media (max-width:744px){
+    .row1{
+        display: flex;
+        flex-direction: column;
+    }
+    .row1 > input{
+       max-width: 500px;
+    }
+    .row2{
+        display: flex;
+        flex-direction: column;
+    }
+}
+

@@ -1,0 +1,148 @@
+.header {
+    height: 180px;
+}
+
+
+/* socialmed */
+
+.header--left__socialmed {
+    height: 80px;
+    line-height: 144px;
+}
+
+.header--left__socialmed a img {
+    width: 24px;
+    margin-right: 4px;
+}
+
+
+/* search */
+
+.header--left__search {
+    position: relative;
+    padding-top: 28px;
+}
+
+.menu--search {
+    position: absolute;
+    margin: 4px 8px;
+    width: 28px;
+    height: 28px;
+}
+
+.item {
+    margin-top: 0.1rem;
+    height: 1.5rem;
+    background-color: rgba(114, 110, 110, 0.75);
+}
+
+#search--list {
+    height: 150px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: absolute;
+    margin: 5px;
+    width: auto;
+    z-index: 100;
+}
+
+#sname {
+    margin: 0 0.5rem;
+    color: white;
+}
+
+#sname:hover {
+    cursor: pointer;
+    transform: scale(1.025);
+    color: black;
+}
+
+.header--left__search i {
+    position: absolute;
+    margin: 5px;
+    font-size: 18px;
+    color: #c4c4c4c4;
+}
+
+.header--left__search input {
+    width: 180px;
+    height: 40px;
+    margin-left: 4px;
+    padding-left: 36px;
+    border-radius: 4px;
+    border: 1px solid #c4c4c4c4;
+}
+
+input[type="text"]::placeholder {
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.3);
+    font-family: quicksand, sans-serif;
+}
+
+
+/* search mobile */
+
+.header--left-mobile__search {
+    height: 148px;
+    line-height: 148px;
+    display: none;
+}
+
+.header--left-mobile__search i {
+    font-size: 1.45rem;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+
+/* logo */
+
+.header--center {
+    height: 180px;
+    background-image: url(../img/homepage/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/* cart, account */
+
+.header--right {
+    display: flex;
+    justify-content: end;
+    height: 11.25rem;
+    line-height: 14rem;
+    margin-right: 0.5rem;
+}
+
+.header--right a i {
+    font-size: 22px;
+    padding-left: 20px;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+@media (max-width:1023px) {
+    .header {
+        height: 128px;
+    }
+    .header--center,
+    .header--right,
+    .header--left-mobile__search {
+        height: 128px;
+        line-height: 136px;
+    }
+    .header--left__socialmed,
+    .header--left__search {
+        display: none;
+    }
+    .header--left-mobile__search {
+        display: flex;
+        justify-content: start;
+    }
+}
+
+@media (max-width:575px) {
+    .header--left-mobile__search,
+    .header--right {
+        display: none;
+    }
+}

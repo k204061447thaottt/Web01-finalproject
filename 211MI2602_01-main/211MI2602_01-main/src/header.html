@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Import font Quicksand -->
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+
+    <!--Import font awesome -->
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+
+    <!--Boostrap -->
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/header.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+
+            <!-- left -->
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                <div class="header--left">
+                    <div class="header--left__socialmed">
+                        <a href="https://www.facebook.com/D%C3%A9licat-107593155064886"><img src="../img/homepage/socialmed/fb.webp" alt=""></a>
+                        <a href="https://www.instagram.com/"><img src="../img/homepage/socialmed/ins.webp" alt=""></a>
+                        <a href="https://www.pinterest.com/"><img src="../img/homepage/socialmed/pin.webp" alt=""></a>
+                    </div>
+                    <form>
+                        <div class="header--left__search">
+                            <a class="menu--search">
+                                <i class="fa fa-search" aria-hidden="true"></i></a>
+                            <input onkeyup="search();" onclick="loadDataSearch();" id="menu--search" placeholder="Search" type="text">
+                            <div id="search--list"></div>
+                        </div>
+
+                    </form>
+                    <script src="../javascript/search.js "></script>
+                    <div class="header--left-mobile__search ">
+                        <a href="# "><i class="fa fa-search " aria-hidden="true "></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- logo -->
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 ">
+                <a href="home.html">
+                    <div class="header--center"></div>
+                </a>
+            </div>
+
+            <!-- right -->
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 ">
+                <div class="header--right ">
+                    <a href="payment.html"><i class="fa fa-shopping-cart " aria-hidden="true" ></i></a>
+                    <a href="login.html"><i class="fa fa-user-circle " aria-hidden="true "></i></a></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

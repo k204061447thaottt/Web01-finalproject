@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Import font Quicksand -->
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+
+    <!--Import font awesome -->
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+
+    <!--Boostrap css -->
+    <link rel="stylesheet" href="https://www.w3schools.com/bootstrap5/bootstrap_offcanvas.php">
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/forgotpw.css">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <title>Delicat</title>
+</head>
+
+<body style="font-family: quicksand, sans-serif;">
+    <!-- topbar -->
+    <div w3-include-html="topbar.html"></div>
+
+
+    <!-- header -->
+    <div w3-include-html="header.html"></div>
+
+
+    <!-- navbar -->
+    <div class="sticky" w3-include-html="navbar.html"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 box">
+                <form id="form-container">
+                    <p id="header">QUÊN MẬT KHẨU</p>
+                    <p id="content">Nhấn vào nút ở phía dưới, nhân viên chăm sóc khách hàng của DÉlicat sẽ gọi vào số điện thoại quý khách và cung cấp lại mật khẩu mới cho quý khách. Xin cảm ơn quý khách.</p>
+                    <button type="button" id="fg" onclick="fgsc();">Cấp lại mật khẩu</button></form>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+            </div>
+        </div>
+    </div>
+    <div w3-include-html="footer.html"></div>
+    <script>
+        w3.includeHTML()
+
+        function fgsc() {
+            alert("Cấp lại mật khẩu thành công!");
+            location.replace("../src/login.html");
+        }
+    </script>
+    <script src="../javascript/search.js "></script>
+</body>
+
+</html>

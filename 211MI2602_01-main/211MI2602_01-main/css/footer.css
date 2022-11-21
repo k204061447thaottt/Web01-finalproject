@@ -1,0 +1,35 @@
+.footer {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    margin-top: 50px;
+    bottom: 0;
+}
+
+.row {
+    padding: 0.5rem 0;
+}
+
+.footer__contact {
+    display: flex;
+    justify-content: center;
+    height: 3rem;
+    line-height: 3rem;
+}
+
+.footer__contact-icon {
+    position: relative;
+    margin: 0.5rem;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid white;
+    text-align: center;
+    line-height: 26px;
+}
+
+@media (max-width: 345px) {
+    .footer__contact {
+        justify-content: start;
+        margin: 0 -1.875rem;
+    }
+}

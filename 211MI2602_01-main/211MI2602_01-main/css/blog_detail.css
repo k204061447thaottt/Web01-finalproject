@@ -1,0 +1,32 @@
+.entry-thumbnail {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+html,
+body {
+    font-size: 14px;
+    font-family: quicksand;
+}
+
+.entry-title {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.img-thumbnail {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: "750";
+    height: "499"; */
+    max-width: 750px 100vw, 750px;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
