@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About us</title>
+    <link rel="stylesheet" href="../css/about_us.css" />
+    <link rel="stylesheet" href="../css/Header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <script src="../javascript/search.js"></script>
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+
+    <!-- js include -->
+    <script>
+      function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        /* Loop through a collection of all HTML elements: */
+        z = document.getElementsByTagName("*");
+        for (i = 0; i < z.length; i++) {
+          elmnt = z[i];
+          /*search for elements with a certain atrribute:*/
+          file = elmnt.getAttribute("w3-include-html");
+          if (file) {
+            /* Make an HTTP request using the attribute value as the file name: */
+            xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+              if (this.readyState == 4) {
+                if (this.status == 200) {
+                  elmnt.innerHTML = this.responseText;
+                }
+                if (this.status == 404) {
+                  elmnt.innerHTML = "Page not found.";
+                }
+                /* Remove the attribute, and call this function once more: */
+                elmnt.removeAttribute("w3-include-html");
+                includeHTML();
+              }
+            };
+            xhttp.open("GET", file, true);
+            xhttp.send();
+            /* Exit the function: */
+            return;
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    
+    <!-- include header -->
+    <div w3-include-html="Header.html"></div>
+
+    <script>
+        includeHTML();
+    </script>
+    
+
+    
+    <!-- body about us -->
+    <div class="about__us">
+      <img class="banner_img" src="https://lh3.google.com/u/3/d/1DYBBBCOz2Iuhw38HmHA0y64Hi-8i69V_=w1920-h942-iv1" alt="banner_aboutus" />
+      <div class="container__aboutUs">
+        <div class="row">
+          <h2>About Honey Fashion</h2>
+          <div class="content_aboutUS">
+            <div class="item__left">
+              <img src="https://lh3.google.com/u/3/d/1h6weNA69BvEAGzhb5_VmOO9Eu98wEdrT=w1920-h942-iv1" />
+            </div>
+            <div class="item__right">
+              <p class="main-text">
+                Hello, dream girls... <br />
+                <br>
+                Honey fashion is a brand with mission making possible for
+                customers around the world to express themselves through fashion
+                and design, and to choose a more sustainable lifestyle. We
+                create value for people and society in general by delivering our
+                customer.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="title">
+            <img src="https://lh3.google.com/u/3/d/18PqmjRglvcc6C7_n7NZs-E_wTx0j5Y4C=w1920-h942-iv1" alt="" />
+            <h2>Privacy Policy</h2>
+          </div>
+          <p>
+            When you visit the Site, we collect certain information about your
+            device, your interaction with the Site, and information necessary to
+            process your purchases.
+            <br />
+            <br />
+            We may also collect additional information if you contact us for
+            customer support. In this privacy Policy, we refer to any
+            information that can uniquely identify an individual (including the
+            information below) as "Personal Information". See the list below for
+            more information about what Personal Information we collect and why.
+          </p>
+        </div>
+        <div class="row">
+          <div class="title">
+            <img src="https://lh3.google.com/u/3/d/18PqmjRglvcc6C7_n7NZs-E_wTx0j5Y4C=w1920-h942-iv1" alt="" />
+            <h2>Return Policy</h2>
+          </div>
+
+          <p>
+            We have a 7-days return policy, which means you have 7 days after
+            receiving your item to request a return.
+            <br /><br />
+            To be eligible for a return, your item must be in the same condition
+            that you received it, unworn or unused, with tags, and in its
+            original packaging. You will also need the receipt or proof of
+            purchase.To start a return, you can contact us at
+            cshoneyfashion@gmail.com. <br /><br />
+            If your return is accepted, instructions on how and where to send
+            your package will be provided. Items sent back to us without first
+            requesting a return will not be accepted.You can always contact us
+            for any return question at cshoneyfashion@gmail.com
+          </p>
+        </div>
+        <div class="row">
+          <hr class="line" />
+          <h3>“Thank you for trusting, following and supporting us.“</h3>
+          <hr class="line" />
+        </div>
+      </div>
+    </div>
+
+
+    <!-- include footer -->
+    <div w3-include-html="Footer.html"></div>
+
+    <script>
+        includeHTML();
+    </script>
+  </body>
+</html>
