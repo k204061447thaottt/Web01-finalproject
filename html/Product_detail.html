@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../css/Header.css">
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/Product_detail.css" type="text/css">
+
+    <script src="../javascript/search.js"></script>
+
+    <!--  import w3 lib -->
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="../javascript/product_detail.js"></script>
+</head>
+
+<body>
+    <p class="header-content" style="display:block" w3-include-html="Header.html"></p> 
+
+    
+    <span class="title_res">Basic Babydoll</span>
+    <div class="total">
+        <div class="product">
+            <div class="container__image">
+                <div class="container__img">
+                    <div class="subb">
+                        <div id="img-main">
+                            <img src="" id="main-img" alt="">
+                        </div>
+                    </div>
+                    <!-- <div class="subb">
+                        <div class="container__subimg">
+                            <div class="img_sub"><img class="img-li" src="" alt="" id="one"></div>
+                            <div class="img_sub"><img class="img-li" src="" alt="" id="two"></div>
+                            <div class="img_sub"><img class="img-li" src="" alt="" id="three"></div>
+                            <div class="img_sub"><img class="img-li" src="" alt="" id="four"></div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <!-- desktop -->
+            <div class="container__detail">
+                <div id="title1">Basic Babydoll</div>
+                <hr class="solid">
+                <div class="container__price">
+                    <div class="price__discount">-18%</div>
+                    <div class="price">
+                        <div class="price__sell" id="newPrice">329,000<sup>đ</sup></div>
+                        <div class="price__actual" id="oldPrice">400,000<sup>đ</sup></div>
+                    </div>
+                </div>
+                <hr class="solid">
+                <div class="container__size">
+                    <div class="title5">Size</div>
+                    <div class="wrapper">
+                        <input type="radio" name="select" id="option-1" checked>
+                        <input type="radio" name="select" id="option-2">
+                        <input type="radio" name="select" id="option-3">
+                        <label for="option-1" class="option option-1">
+                            <span>S</span>
+                        </label>
+                        <label for="option-2" class="option option-2">
+                            <span>M</span>
+                        </label>
+                        <label for="option-3" class="option option-3">
+                            <span>L</span>
+                        </label>
+                    </div>
+                </div>
+                <hr class="solid">
+                <div class="container__quantity">
+                    <div class="title5">Quantity</div>
+                    <div class="quantity">
+                        <button class="quantity__button" onclick="minus1()">-</button>
+                        <span class="number" id="ggg">0</span>
+                        <button class="quantity__button" onclick="plus1()">+</button>
+                    </div>
+                </div>
+
+                <hr class="solid">
+                <div class="description">
+                    <div class="title5">Description</div>
+                    <p class="description__detail">
+                        Spring is the season of hundreds of flowers blooming and emitting a fragrant fragrance. With
+                        the
+                        meaning that human is the highlight among flowers, the "Beauty Spring" Collection was born.
+                        Spring
+                        flowers bloom because of you!
+                    </p>
+                </div>
+                <div>
+                    <button class="cart" onclick="addToCart()">
+                        ADD TO CART
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="other__product">
+            <div class="title3">Other products in Beauty collection</div>
+            <div class="other__item" id="content"></div>
+        </div> -->
+    </div>
+    <div class="footer-content" style="display:block" w3-include-html="Footer.html"></div> 
+
+    <script>
+        w3.includeHTML();
+    </script>
+</body>
+<script defer>
+    function addToCart() {
+    alert("Added to cart sucessfully!");
+  }
+    function get_query() {
+        let url = document.location.href;
+        let qs = url.substring(url.indexOf("?") + 1).split("&");
+        let i = 0,
+          result = {};
+        for (; i < qs.length; i++) {
+          qs[i] = qs[i].split("=");
+          result[qs[i][0]] = decodeURIComponent(
+            (qs[i][1] + "").replace(/\+/g, "%20")
+          );
+        }
+        return result;
+      }
+      var result = get_query();
+      console.log(result);
+      document.getElementById("title1").innerText = result.name;
+      document.getElementById("oldPrice").innerText = result.oldPrice;
+      document.getElementById("newPrice").innerText = result.newPrice;
+      document.getElementById("main-img").src = result.image_url;
+      
+</script>
+
+</html>
