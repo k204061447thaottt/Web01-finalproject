@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <link rel="stylesheet" href="../css/signup.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="header-signup">
+        <img src="https://lh3.google.com/u/0/d/1jFkiWtDaCgUATMnJ3bfnSjR5xDcrhJio=w1920-h942-iv2">
+    </div>
+    <section>
+      <!--Bắt Đầu Phần Hình Ảnh-->
+      <div class="img-bg">
+        <img
+          src="https://icdn.24h.com.vn/upload/3-2022/images/2022-07-20/lo-lem-4-1658304230-125-width1062height1542.jpg"
+          alt="Hình Ảnh Minh Họa"
+        />
+      </div>
+      <!--Kết Thúc Phần Hình Ảnh-->
+      <!--Bắt Đầu Phần Nội Dung-->
+      <div class="content">
+        <div class="form">
+          <h2>Sign up</h2>
+          <form action="">
+            <div class="input-form">
+              <span >Phone number</span>
+              <input type="text" name="phone" id="phone" onfocusout="formValidate()"/>
+            </div>
+            <div class="input-form">
+              <span>Password</span>
+              <input type="password" name="password" id="password" />
+            </div>
+            <div class="input-form">
+              <span>confirm password</span>
+              <input type="password" name="password" id="retypepw" />
+            </div>
+
+            <div class="input-form">
+              <span>Gender</span>
+
+              <div class="form__choice">
+                <div>
+                  <input name="Gender" type="radio" value="Nam" />
+                  <label for=""> Male</label>
+                </div>
+
+                <div>
+                  <input name="Gender" type="radio" value="Nu" checked/>
+                  <label for=""> Female</label>
+                </div>
+              </div>
+            </div>
+            
+            <div class="remember-login">
+              <label
+                ><input type="checkbox" name="remember" /> Remember login</label
+              >
+            </div>
+            <div class="input-form">
+              <input type="button" value="Register" id="signup" onclick="susc();" />
+            </div>
+            <div class="input-form">
+              <p>Already have an account? <a href="./login.html">Login</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!--Kết Thúc Phần Nội Dung-->
+    </section>
+    <script>
+      w3.includeHTML()
+
+      function formValidate() {
+            var phone = document.getElementById("phone").value;
+            var regExp = /^(0[0-9]{9})$/;
+            if (!regExp.test(phone))
+                alert('invalid phone number! please try again');
+        }
+
+      function susc() {
+          var phone = document.getElementById("phone").value;
+          var password = document.getElementById("password").value;
+          var retypepassword = document.getElementById("retypepw").value;
+          if (password != "" && phone != "" && retypepassword != "") {
+              if (password == retypepassword) {
+                  alert("Register successfully!");
+                  location.replace("homepage.html");
+              } else {
+                  alert("Not correct with password above. Try again");
+              }
+          } else {
+              alert("Please fill all the requirement information");
+          }
+      }
+
+      function sc() {
+          // alert("Register successfully");
+          location.replace("login.html");
+      }
+  </script>
+  </body>
+</html>

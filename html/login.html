@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    
+
+</head>
+
+<body>
+    <div class="header-signup">
+        <img src="https://lh3.google.com/u/0/d/1jFkiWtDaCgUATMnJ3bfnSjR5xDcrhJio=w1920-h942-iv2">
+    </div>
+    
+    <section>
+        <!--Bắt Đầu Phần Hình Ảnh-->
+        <div class="img-bg">
+            <img src="https://icdn.24h.com.vn/upload/3-2022/images/2022-07-20/lo-lem-4-1658304230-125-width1062height1542.jpg"
+                alt="Hình Ảnh Minh Họa">
+        </div>
+        <!--Kết Thúc Phần Hình Ảnh-->
+        <!--Bắt Đầu Phần Nội Dung-->
+        <div class="content">
+            <div class="form">
+                <h2>Login</h2>
+                <form action="">
+                    <div class="input-form">
+                        <span>Phone number</span>
+                        <input type="text" name="phone number" id="phone" onfocusout="formValidate()">
+                    </div>
+                    <div class="input-form">
+                        <span>Password</span>
+                        <input type="password" name="password" id="password" >
+                    </div>
+                    <div class="remember-login">
+                        <label><input type="checkbox" name="remember"> Remember login</label>
+                    </div>
+                    <div class="input-form">
+                        <input type="button" value="Log in" id="signin" onclick="lgsc();">
+                    </div>
+                    <div class="input-form">
+                        <p>Don't have account? <a href="./signup.html">Register</a></p>
+                    </div>
+                </form>
+                
+            </div>
+        </div>
+        <!--Kết Thúc Phần Nội Dung-->
+    </section>
+    <script>
+        w3.includeHTML()
+
+        function formValidate() {
+            var phone = document.getElementById("phone").value;
+            var regExp = /^(0[0-9]{9})$/;
+            if (!regExp.test(phone))
+                alert('Invalid phone number');
+        }
+
+        function lgsc() {
+            var phone = document.getElementById("phone").value;
+            var password = document.getElementById("password").value;
+            if (password != " " && phone != " ") {
+                if (phone == '0123456789' && password == '123') {
+                    alert("Log in successfully");
+                    location.replace("homepage.html");
+                } else {
+                    alert("Tài khoản không tồn tại!");
+                }
+            } else {
+                alert("Nhập thiếu thông tin! Mời nhập đủ thông tin đăng nhập!");
+
+            }
+        }
+
+        function sc() {
+            alert("Log in successfully");
+            location.replace("Homepage.html");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,332 @@
+body {
+  
+  overflow-x: hidden;
+  width: fit-content;
+  margin: 0;
+  padding: 0;
+
+}
+
+
+.header-content{
+  width: 100%;
+}
+
+.header-content a{
+  text-decoration: none ;
+}
+
+
+
+
+.container-product{
+  margin: 0;
+  padding:0;
+  
+
+}
+
+
+h3{
+  text-align: left;
+  font-size: 20px!important;
+  font-weight: 400 !important;
+}
+
+
+/* Content */
+.content {
+  
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  text-align: left;
+  font-family: Roboto;
+  
+}
+
+/* left */
+
+.column-left {
+  vertical-align: top;
+  width: 20% ;
+  font-family: Roboto;
+  
+}
+
+
+.column-left .filter-price{
+  text-align: left;
+  margin-left:24px;
+  
+}
+ul { list-style-type: none; }
+
+a {
+  color: #b63b4d;
+  text-decoration: none;
+}
+
+/** =======================
+ * Contenedor Principal
+ ===========================*/
+
+
+h1 {
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 80px;
+}
+
+h1 a {
+  color: #c12c42;
+  font-size: 16px;
+}
+
+.accordion {
+  width: 100%;
+  /* max-width: 360px; */
+  margin: 0px auto 20px;
+  background: #FFF;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  padding: 10px;
+  
+}
+
+
+.accordion .link {
+  cursor: pointer;
+  display: block;
+  padding: 15px 15px 15px 40px;
+  color: #4D4D4D;
+  font-size: 14px;
+  font-weight: 700;
+  border-bottom: 1px solid #CCC;
+  position: relative;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+
+
+.column-left h4{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  margin-top: 35px;
+  margin-bottom: 5px;
+}
+
+.column-left .filter-price i{
+  
+  text-decoration: none;
+  font-size: 30px;
+  
+}
+
+.column-left .filter-price span{
+  font-size: 20px;
+  line-height: 26px;
+  font-style: normal;
+  font-weight: 500;
+  
+}
+
+.column-left .filter-price p{
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  padding-top: 15px;
+  
+}
+
+
+
+.column-right {
+  
+  
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 80%;
+  
+  
+}
+.column-right h1{
+  padding-top: 20px;
+  text-align: left;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  font-family: Roboto;
+  font-weight: 500;
+  color: #96CB65;
+  Font-size: 32px;
+  line-height: 22px;
+  vertical-align: Top;
+  letter-spacing: 0.15%;
+
+}
+
+
+.column-right .product{
+  justify-content:space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+ 
+  
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 5px 0px ;
+  
+}
+.item p{
+  color: red;
+}
+
+.item >  img {
+  background-repeat: no-repeat;
+    Width:214.91px;
+    Height: 381.65px;
+    top : 296px;
+    left : 322.09px;
+    border: 3px solid rgba(0, 0, 0, 0);
+    border-radius: 7.27273px;
+}
+
+.item > a{
+  text-decoration: none;
+  color: black;
+}
+.item > a:hover{
+  text-decoration: none;
+  color: #96CB65;
+}
+.item > h3{
+  margin-bottom:0;
+}
+.item  span{
+  text-decoration: line-through;
+  margin: 0;
+  padding-left: 10px;
+  color: rgba(130, 130, 130, 1);
+  ;
+}
+
+.item:hover{
+  transform: scale(1.01);
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    background-color: white;
+    
+  
+  }
+  
+  /* .column-left{
+    display: none;
+  } */
+/* left */
+.column-left  {
+  width: 100% !important;
+  display: block;
+}
+
+.accordion {
+  
+  margin: 0px auto 0px;}
+.accordion .link {
+    
+    padding: 0px 40px ;
+    margin-top: 0px;
+    text-align: left;
+    
+    
+  }
+  .submenu{
+    padding: 25px;
+  }
+  /* right */
+  
+  
+  .item {
+    white-space: wrap;
+    font-size: smaller;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 0 ;
+  }
+
+  .item img{
+    scale: (-1.5);
+  }
+
+
+
+  .column-right {
+  
+  
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    
+    
+  }
+  .column-right h1{
+    text-align: center;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    font-family: Roboto;
+    font-weight: 500;
+    color: #96CB65;
+    Font-size: 28px;
+    line-height: 22px;
+    vertical-align: Top;
+    letter-spacing: 0.15%;
+  
+  }
+  .column-right h3{
+    font-size: 14px;
+  }
+  
+  
+  .column-right .product{
+    justify-content:space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+   
+    
+  }
+
+  .product .item img{
+    height: 90%;
+    width: 10rem;
+  }
+  .content{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+  }
+
+  
+  
+}
+@media (min-width:992px) {
+  .footer-content {
+    width: 100vw;
+  }
+}
+
