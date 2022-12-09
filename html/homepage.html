@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+      <!-- Css -->
+      <link rel="stylesheet" href="../css/homepage.css" />
+      <link rel="stylesheet" href="../css/Header.css">
+      <link rel="stylesheet" href="../css/footer.css" />
+  
+      <!--  scripts -->
+      <script src="../javascript/search.js"></script>
+      <script src="https://www.w3schools.com/lib/w3.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <!-- import font & icon -->
+  
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+      <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+      <!-- Bootstrap lib css -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+      
+</head>
+<body>
+       
+      <p class="header-content" style="display:block" w3-include-html="Header.html"></p> 
+       
+        <!-- Main content  -->
+      <div class="content">
+
+        <!-- Banner -->
+        <div class="banner__area">
+            <img class="banner" src="https://lh3.google.com/u/0/d/1g6EtQtUa2vPix4MHnhgAbNwnkdFSiUgV=w1920-h942-iv2">
+            </div>
+
+
+        <!-- Slide bar -->
+        <div class="slide-line">
+            <div id="slide--item" class="slide__area">
+                <!-- <div class="buy">
+                    <p>Best-seller</p>
+                    <button class="buy_button">BUY NOW</button>
+                </div>    -->
+            </div>
+        </div>
+
+         <!-- NEW PRODUCT -->
+        <div class="sub-text">
+            <p class="title">
+                NEWEST COLLECTION
+            </p>   
+            <p class="short-description" >
+                Discover the new collection at Honey fashion. The latest fashion trends for women with fashion shoots for the coming season.
+            </p>
+        </div>
+        <!-- Product line -->
+        <div class="product-line" >
+          <div class="product container-product" id="newest">
+          </div> 
+        </div>
+  
+         <!-- BEST SELLER -->
+        <div class="sub-text">
+            <p class="title">
+                BEST SELLER
+            </p>   
+            <p class="short-description" >
+                Discover the new collection at Honey fashion. The latest fashion trends for women with fashion shoots for the coming season.
+            </p>
+        </div>
+        <!-- Product line -->
+        <div class="product-line" >
+          <div class="product container-product" id="bestseller">
+          </div> 
+        </div>
+  
+      </div>
+      <div class="footer-content" style="display:block" w3-include-html="Footer.html"></div> 
+      <script>
+        w3.includeHTML();
+        function loadJson1(){
+            fetch("../data/product.json")
+            .then(function(res){
+                if(!res.ok){
+                    throw Error("Http Error:3", res.status);
+                }
+                return res.json();
+            })
+            .then(function(data){
+              let html ="";
+              var temp = data.filter(function(item) {
+                  
+                  return item.collection == "Summer Time";
+              });
+              console.log(temp);
+                
+                for(let p of temp){
+                  var newest = "";
+                  // newest += "?note=" + p.note + "&";
+                  newest += "?name=" + p.name + "&";
+                  newest += "newPrice=" + p.newPrice + "&";
+                  newest += "oldPrice=" + p.oldPrice + "&";
+                  newest += "image_url=" + p.image_url + "&";
+                  
+                    html +=`<div class ="item" onclick="openProduct('${newest}')">`;
+                    
+                    html += "<image class='img' src='" + p.image_url + "'/>";
+                    
+                    // html += "<image src'" + p.thumbnailURL + "'/><br/>";
+                    html+= "<a href>"+"<h3>" + p.name + "</h3>"+"</a>" + "<p>"+ p.newPrice +"<span>"+ p.oldPrice +"</span>" +"</p>" ;
+                    html +="</div>";   
+                }
+                document.getElementById("newest").innerHTML = html;
+            })
+        
+            .catch(function(err){
+                alert(err.message);
+            })
+        
+        
+        }
+        function loadJson(){
+          fetch("../data/product.json")
+          .then(function(res){
+              if(!res.ok){
+                  throw Error("Http Error:2", res.status);
+              }
+              return res.json();
+          })
+          .then(function(data){
+            let html ="";
+            var temp = data.filter(function(item) {
+                
+                return item.note == "bestseller";
+            });
+            console.log(temp);
+              
+              for(let p of temp){
+                var content = "";
+                content += "?note=" + p.note + "&";
+                content += "?name=" + p.name + "&";
+                content += "newPrice=" + p.newPrice + "&";
+                content += "oldPrice=" + p.oldPrice + "&";
+                content += "image_url=" + p.image_url + "&";
+                
+                  html +=`<div class ="item" onclick="openProduct('${content}')">`;
+                  
+                  html += "<image class='img' src='" + p.image_url + "'/>";
+                  
+                  // html += "<image src'" + p.thumbnailURL + "'/><br/>";
+                  html+= "<a href>"+"<h3>" + p.name + "</h3>"+"</a>" + "<p>"+ p.newPrice +"<span>"+ p.oldPrice +"</span>" +"</p>" ;
+                  html +="</div>";   
+              }
+              document.getElementById("bestseller").innerHTML = html;
+          })
+          .catch(function(err){
+              alert(err.message);
+          })
+      
+      }
+      loadJson();
+        loadJson1();
+    </script>  
+
+    <!-- load slide bar -->
+    <script>
+        fetch("../data/slidebar.json")
+            .then(function(res){
+                if(!res.ok){
+                    throw Error("Http Error:1 ", res.status);
+                }
+                return res.json();
+            })
+            .then(function(data){
+                let html = "";
+                for(let p of data){
+                    html += "<div class='slide-item'>";
+                    html += "<img class='thumb-img' src='" + p.imageurl + "'>" + "<br>"; 
+                   
+                    // html += "<div class='buy'>" + "<p>" + p.name + " </p>" + "<button class='buy_button'>BUY NOW</button></div>"
+                    html += "</div>";    
+                }
+                document.getElementById("slide--item").innerHTML = html; 
+            })
+            .catch(function(err){
+                alert(err.message)
+            })
+    </script>
+    <!-- dropdown content -->
+    
+    <script>
+      function openProduct(content) {
+        var myWindow = window.open(`Product_detail.html${content}`);
+      }
+  
+      $(function() {
+    var Accordion = function(el, multiple) {
+      this.el = el || {};
+      this.multiple = multiple || false;
+  
+      // Variables privadas
+      var links = this.el.find('.link');
+      // Evento
+      links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+    }
+  
+    Accordion.prototype.dropdown = function(e) {
+      var $el = e.data.el;
+        $this = $(this),
+        $next = $this.next();
+  
+      $next.slideToggle();
+      $this.parent().toggleClass('open');
+  
+      if (!e.data.multiple) {
+        $el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+      };
+    } 
+  
+    var accordion = new Accordion($('#accordion'), false);
+  });
+    </script>
+</body>
+</html>

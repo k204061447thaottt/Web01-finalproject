@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/account_order.css">
+    <link rel="stylesheet" href="../css/Header.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- js -->
+    <script src="../javascript/search.js"></script>
+    <script src="../javascript/account_infor.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+  </head>
+
+
+  <body>
+    <div class="header_include">
+      <!-- include header -->
+      <div w3-include-html="./Header.html"></div>
+      
+      <script>
+          includeHTML();
+      </script>
+    </div>
+    <input type="checkbox" id="check">
+    <!--header area start-->
+    <div class=top>
+      <div class="left_area">
+        <h3>Account</h3>
+      </div>
+      <label for="check">
+        <i class="bi bi-list" id="sidebar_btn"></i>
+      </label>
+    </div class=top>
+    <!--header area end-->
+
+    <!--mobile navigation bar start-->
+    <div class="mobile_nav">
+      <div class="nav_bar">
+        <img src="https://by.com.vn/2pVCi" class="mobile_profile_image" alt="">
+        <i class="fa fa-bars nav_btn"></i>
+      </div>
+      <div class="mobile_nav_items active">
+        <a href="account_infor.html"><i class="bi bi-person-circle"></i><span>Profile information</span></a>
+      <a href="account_order.html"><i class="bi bi-kanban"></i><span>Manage order</span></a>
+      <a href="login.html"><i class="bi bi-box-arrow-right"></i><span>Log out</span></a>
+      </div>
+    </div>
+    <!--mobile navigation bar end-->
+    <!--sidebar start-->
+    <div class="container">
+      <div class="sidebar">
+        <div class="profile_info">
+          <img src="https://images.headlines.pw/topnews-2017/imgs/17/7a/177addbd134023db78261be953227ff542a14e78.jpg" class="profile_image" alt="">
+          <h4>Nhu Hoang Nguyen</h4>
+        </div>
+        <a href="./account_infor.html"><i class="bi bi-person-circle"></i><span>Profile information</span></a>
+        <a href="./account_order.html"><i class="bi bi-kanban"></i><span>Manage order</span></a>
+        <a href="login.html"><i class="bi bi-box-arrow-right"></i><span>Log out</span></a>
+      </div>
+      <!--sidebar end-->
+      <div class="content">
+        <div class="column" id="right">
+            <div class="info" >
+                <div class="order_status">
+                    <a href="#">All order</a>
+                    <a href="#">Processing</a>
+                    <a href="#">Being Transport</a>
+                    <a href="#">Delivered</a>
+        
+                </div>
+                
+                <div class="detail"  id="order_detail">
+                    <p class="mini-status" style="padding-top: 20px"> Delivery successful <span style="float: right;">details</span></p>
+                    <hr class="hr" >
+
+                    <div class="product" >
+                        <img src="https://lh3.google.com/u/0/d/11IJ8ztIPIKIRicNdUp96bo6bJkdvQ_Lv=w1920-h942-iv1" alt="error" id="product_image">
+                        <div class="product_detail" id="product_quantity">
+                            <div class="quantity" id="product_name">Cloud Day Dress
+                                <p>quantity: x1</p>
+                            </div>
+                            
+                        </div>
+                        <div class="product_detail" id="product_price">
+                            <p id="original_price">289.000đ &emsp; <span id="discount_price">189.000đ</span></p>
+                        </div>
+                        <div class="product_detail" id="product_final">100.000đ</div>
+                        
+                    </div>
+                    <div class="product">
+                        <img src="https://lh3.google.com/u/0/d/11IJ8ztIPIKIRicNdUp96bo6bJkdvQ_Lv=w1920-h942-iv1" alt="error" id="product_image">
+                        <div class="product_detail" id="product_quantity">
+                            <div class="quantity" id="product_name">Cloud Day Dress
+                                <p>quantity: x1</p>
+                            </div>
+                            
+                        </div>
+                        <div class="product_detail" id="product_price">
+                            <p id="original_price">289.000đ &emsp; <span id="discount_price">189.000đ</span></p>
+                        </div>
+                        <div class="product_detail" id="product_final">100.000đ</div>
+                        
+                    </div>
+                    <div class="product">
+                        <img src="https://lh3.google.com/u/0/d/11IJ8ztIPIKIRicNdUp96bo6bJkdvQ_Lv=w1920-h942-iv1" alt="error" id="product_image">
+                        <div class="product_detail" id="product_quantity">
+                            <div class="quantity" id="product_name">Cloud Day Dress
+                                <p>quantity: x1</p>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="product_detail" id="product_price">
+                            <p id="original_price">289.000đ &emsp; <span id="discount_price">189.000đ</span></p>
+                        </div>
+                        <div class="product_detail" id="product_final">100.000đ</div>
+                        
+                    </div>
+                    <div class="product">
+                        <img src="https://lh3.google.com/u/0/d/11IJ8ztIPIKIRicNdUp96bo6bJkdvQ_Lv=w1920-h942-iv1" alt="error" id="product_image">
+                        <div class="product_detail" id="product_quantity">
+                            <div class="quantity" id="product_name">Cloud Day Dress
+                                <p>quantity: x1</p>
+                        </div>
+                            
+                        </div>
+                        <div class="product_detail" id="product_price">
+                            <p id="original_price">289.000đ &emsp; <span id="discount_price">189.000đ</span></p>
+                        </div>
+                        <div class="product_detail" id="product_final">100.000đ</div>
+              
+                    </div>
+                    <hr class="hr" >
+                    <div class="total">
+                      <p>Total <span>xxx.000đ</span></p>
+                    </div>
+
+                </div>
+                <br>
+
+                <div class="detail"  id="order_detail">
+                  <p class="mini-status" style="padding-top: 20px"> Processing <span style="float: right;">details</span></p>
+                  <hr class="hr">
+
+                  <div class="product" >
+                      <img src="https://lh3.google.com/u/0/d/11IJ8ztIPIKIRicNdUp96bo6bJkdvQ_Lv=w1920-h942-iv1" alt="error" id="product_image">
+                      <div class="product_detail" id="product_quantity">
+                          <div class="quantity" id="product_name">Cloud Day Dress
+                              <p>quantity: x1</p>
+                          </div>
+                          
+                      </div>
+                      <div class="product_detail" id="product_price">
+                          <p id="original_price">289.000đ &emsp; <span id="discount_price">189.000đ</span></p>
+                      </div>
+                      <div class="product_detail" id="product_final">100.000đ</div>
+                      
+                  </div>
+
+                  <div class="product">
+                      <img src="https://lh3.google.com/u/0/d/11IJ8ztIPIKIRicNdUp96bo6bJkdvQ_Lv=w1920-h942-iv1" alt="error" id="product_image">
+                      <div class="product_detail" id="product_quantity">
+                          <div class="quantity" id="product_name">Cloud Day Dress
+                              <p>quantity: x1</p>
+                          </div>
+                          
+                      </div>
+                      <div class="product_detail" id="product_price">
+                          <p id="original_price">289.000đ &emsp; <span id="discount_price">189.000đ</span></p>
+                      </div>
+                      <div class="product_detail" id="product_final">100.000đ</div>
+                      
+                  </div>
+                  <hr class="hr" >
+                  <div class="total">
+                      <p>Total <span>xxx.000đ</span></p>
+                    </div>
+                  
+                  
+
+              </div>
+
+            </div>
+        
+
+      </div>
+         
+    </div>
+        
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.nav_btn').click(function(){
+          $('.mobile_nav_items').toggleClass('active');
+        });
+      });
+      </script>
+
+
+    
+
+  </body>
+</html>
+      
+

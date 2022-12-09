@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/Order.css">
+    <link rel="stylesheet" href="../css/Header.css">
+    <!-- <link rel="stylesheet" href="../css/menuex.css"> -->
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+    
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="../javascript/search.js"></script>
+
+
+    <title>Order Overview</title>
+</head>
+<body>
+    
+    <div class="header-content" style="display:inline-block;" w3-include-html="Header.html"></div> 
+
+    <div class="Cart-title" id="page_title">
+        <p style="color:#96CB65;font-weight: bolder;font-size: 40px;letter-spacing:0.06em;">Summary Overview</p>
+        <p style="font-weight: 400;font-size: 20px;line-height: 28px; color: #828282;">Check your item and select your address for better experience order item</p>
+    </div>
+
+    <form action="#" method="post">
+
+
+        <div class="container-form" id="order_info">
+            <div class="column" id="left">
+
+                <div class="info" id="cart">
+                    <p class="info_title">Your cart</p>
+                    <div class="detail" id="cart_detail">
+                        <div class="product">
+                            <img src="https://lh3.google.com/u/0/d/11IJ8ztIPIKIRicNdUp96bo6bJkdvQ_Lv=w1920-h942-iv1" alt="error" id="product_image">
+                            <div class="product_detail" id="product_quantity">
+                                <div class="quantity" id="product_name">Cloud Day Dress</div>
+                                <div class="quantity" id="change_quantity">
+                                    <button class="quantity_button">+</button>
+                                    <div class="current">1</div>
+                                    <button  class="quantity_button">-</button>
+                                </div>
+                            </div>
+                            <div class="product_detail" id="product_price">
+                                <p id="original_price">289.000đ &emsp; <span id="discount_price">189.000đ</span></p>
+                            </div>
+                            <div class="product_detail" id="product_final">100.000đ</div>
+                            <button  id="product_delete"><span class="bi bi-trash" style="font-size: 23px; ;"></span></button>
+                        </div>
+                        <hr>
+                        <div class="product">
+                            <img src="./Dreamy Girls - 1.1.jpg" alt="error" id="product_image">
+                            <div class="product_detail" id="product_quantity">
+                                <div class="quantity" id="product_name">Cloud Day Dress</div>
+                                <div class="quantity" id="change_quantity">
+                                    <button class="quantity_button">+</button>
+                                    <div class="current">1</div>
+                                    <button  class="quantity_button">-</button>
+                                </div>
+                            </div>
+                            <div class="product_detail" id="product_price">
+                                <p id="original_price">289.000đ &emsp; <span id="discount_price">189.000đ</span></p>
+                            </div>
+                            <div class="product_detail" id="product_final">100.000đ</div>
+                            <button  id="product_delete"><span class="bi bi-trash" style="font-size: 23px; ;"></span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info" id="delivery">
+                    <p class="info_title">Delivery Address</p>
+                    <div class="detail" id="delivery_detail">
+                        <div class="delivery_container" id="delivery_default">
+                            <!-- <div class="row">
+                                <div id="account_name">Nhu Hoang &emsp; <span id="account_phone">0912575732</span></div>
+                                <button id="delivery_change">Change Address</button>
+                            </div>
+                            <div class="row">
+                                <div id="delivery_type">&emsp; <span class="bi bi-house-door">&nbsp;  </span>Home &emsp; <span></span> </div>
+                                <div id="delivery_address">153 Nguyen Chi Thanh, District 5, TP.Ho Chi Minh</div>
+                            </div> -->
+                        </div>
+                         <hr>
+                         <div class="delivery_container" id="delivery_fill">
+                            <div class="row">
+                                <div class="delivery_title">Full name:</div>
+                                <input type="text" name="delivery_name" id="delivery_name" placeholder="Nguyen Van A">
+                            </div>
+                            <div class="row">
+                                <div class="delivery_title">Phone number:</div>
+                                <input type="text" name="" id="delivery_phone" placeholder="0912345678">
+                            </div>
+                            <div class="row">
+                                <div class="delivery_title">Province / City:</div>
+                                <select name="province" id="delivery_province">
+                                    <option value="none" selected>-- Select province --</option>
+                                </select>
+                            </div>
+                            <div class="row">
+                                <div class="delivery_title">District:</div>
+                                <select name="district" id="delivery_district">
+                                    <option value="none" selected>-- Select district --</option>
+                                </select>
+                            </div>
+                            <div class="row">
+                                <div class="delivery_title">Ward:</div>
+                                <select name="ward" id="delivery_ward">
+                                    <option value="none" selected>-- Select ward --</option>
+                                </select>
+                            </div>
+                            <div class="row">
+                                <div class="delivery_title">Address:</div>
+                                <textarea name="address" id="delivery_address" placeholder="52 Hoang Dieu 2"></textarea>
+                            </div>
+                            <div class="row">
+                                <div class="delivery_title">Type of address:</div>
+                                <div class="input" id="delivery_type_address">
+                                    <input type="radio" value="home" name="type_address" >Home / Appartment&emsp;&emsp;&emsp;
+                                    <input type="radio" value="office" name="type_address" >Office / Company
+                                </div>
+                            </div>
+                            <div class="row" id="delivery_fill_button">
+                                <button id="cancel">Cancel</button>
+                                <button id="update">Update</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+    
+            <div class="column" id="right">
+                <div class="info" id="payment">
+                    <p class="info_title">Payment details</p>
+                    <div class="detail" id="payment_detail">
+                        <div class="payment" id="payment_info">
+                            <div class="row" id="payment_email">
+                                <div class="subtitle">Email:</div>
+                                <input type="email" name="email" id="email" placeholder="nguyenvana@gmail.com">
+                            </div>
+                            <br>
+                            <div class="subtitle">Choose payment method</div>
+                            <div class="form__choice">
+                                <div>
+                                  <input name="payment_method" type="radio" value="COD" />
+                                  <label for=""> Cash on delivery</label>
+                                </div>
+                
+                                <div>
+                                  <input name="payment_method" type="radio" value="Internet banking" checked/>
+                                  <label for=""> Internet banking</label>
+                                </div>
+                              </div>
+                            <!-- <div class="row" id="payment_email_list">
+                                <input type="radio" value="payment_method" name="payment_method">&nbsp;Cash on delivery&emsp;&ensp;
+                                <input type="radio" value="payment_method" name="payment_method">&nbsp;Internet banking
+                            </div> -->
+                        </div>
+                        <hr>
+                        <div class="payment" id="payment_card">
+                            <div class="subtitle">Card Detail</div>
+                            <ul id="payment_card_bank">
+                                <li><button><span><img class="bank" src="https://inrenhat.com/wp-content/uploads/2022/08/logo-vietcombank-png-1400x518.png"  alt=""></span></button></li>
+                            </ul>
+                            <input type="text" name="card_number" id="payment_card_number" placeholder="Card Number"><br>
+                            <input type="text" name="card_name" id="payment_card_name" placeholder="Full Name"><br>
+                            <input type="text" name="card_expired" id="payment_card_expired" placeholder="MM/YY">
+                        </div>
+                    </div>
+    
+                <div class="info" id="order_total">
+                    <div class="detail">
+                        <div class="subtitle">Order Total</div>
+                        <div><span  id="order_total_item">2</span> items</div>
+                        <hr>
+                        <div class="subtitle">Voucher</div>
+                        <input type="text" name="order_voucher" id="order_voucher" placeholder="Enter your voucher">
+                        <input type="button" value="Apply" id="voucher_apply">
+                        <hr>
+                        <div class="row" id="order_row">
+                            <div class="subtitle">Subtotal</div>
+                            <div class="output" id="order_subtotal">756.000vnd</div>
+                        </div>
+                        <div class="row" id="order_row">
+                            <div class="subtitle">Shipping fee</div>
+                            <div class="output" id="order_shipping_fee">34.000vnd</div>
+                        </div>
+                        <div class="row" id="order_row">
+                            <div class="subtitle">Voucher</div>
+                            <div class="output" id="order_voucher_value">50.000vnd</div>
+                        </div>
+                        <hr>
+                        <div class="row" id="order_row">
+                            <div class="subtitle">Total</div>
+                            <div class="output" id="order_total_value">740.000vnd</div>
+                        </div>
+                        <button id="submit">Submit your order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="footer-content" w3-include-html="Footer.html"></div>  
+
+    <script>
+        w3.includeHTML();
+      </script>    
+</body>
+
+</html>

@@ -1,0 +1,396 @@
+* {
+  font-family: roboto;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  padding: 64px 60px;
+  width: fit-content;
+}
+hr {
+  border: 1px solid #d4d3d3;
+  margin: 2px auto;
+  width: 90%;
+}
+
+.row {
+  display: flex;
+}
+.container-form {
+  flex-wrap: wrap;
+  display: flex;
+}
+.header-content {
+  width: 100%;
+  
+}
+.header-content a {
+  text-decoration: none;
+}
+
+/* page title */
+#page_title p {
+  margin: 10px 20px;
+}
+/* order info */
+#order_info {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+.detail {
+  border: 0.5px solid #e5e5e5;
+  box-shadow: 1px 1px 4px rgba(150, 203, 101, 0.25);
+  border-radius: 10px;
+  width: 100%;
+}
+.info_title {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+::placeholder {
+  color: #569232;
+}
+
+/* left */
+#left {
+  flex: 0.6;
+}
+#left .info {
+  margin-right: 36px;
+}
+#left .info_title {
+  padding-left: 40px;
+}
+/* product */
+.product {
+  display: flex;
+  margin: 24px 40px;
+}
+.product img {
+  height: 69px;
+  padding-right: 8px;
+}
+#product_quantity {
+  padding: 8px 40px 8px 8px;
+}
+#product_name {
+  font-size: 20px;
+  padding-bottom: 8px;
+}
+#change_quantity {
+  display: flex;
+}
+#change_quantity div,
+button {
+  padding: 0 8px;
+}
+#change_quantity div {
+  margin: auto 0;
+}
+.quantity_button {
+  color: #625f5f;
+  width: 25px;
+  height: 25px;
+  background: rgba(217, 217, 217, 0.23);
+  text-align: center;
+  vertical-align: middle;
+  border: none;
+}
+#product_price {
+  margin: auto 40px;
+}
+#original_price {
+  font-weight: 600;
+  font-size: 14px;
+  padding-right: 8px;
+}
+#discount_price {
+  font-weight: 400;
+  font-size: 12px;
+  text-decoration-line: line-through;
+  color: #828282;
+}
+#product_final {
+  margin: auto 40px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #ff3c30;
+}
+#product_delete {
+  border: none;
+  background-color: white;
+  margin-left: 8px;
+}
+#product_delete span:hover {
+  color: #646262;
+}
+
+/* delivery */
+/* default */
+.delivery_container {
+  margin: 24px 40px;
+}
+#account_name {
+  flex: 0.7;
+  font-weight: 500;
+  font-size: 16p;
+  margin-bottom: 15px;
+}
+#delivery_change {
+  flex: 0.3;
+  font-weight: 500;
+  font-size: 16px;
+  color: #569232;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-align: right;
+  margin-bottom: 15px;
+}
+#delivery_type {
+  background: #e4f7d2;
+  border-radius: 10px;
+  line-height: 28px;
+  color: #96cb65;
+}
+#delivery_address {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #625f5f;
+  margin-left: 40px;
+}
+/* change */
+#delivery_fill .row {
+  padding: 8px 0;
+  height: 35px;
+}
+.delivery_title {
+  flex: 0.25;
+  font-weight: 500;
+  font-size: 16px;
+  margin: auto 0;
+}
+#delivery_fill input,
+select,
+textarea {
+  flex: 0.75;
+  width: 100%;
+  border: 1px solid #96cb65;
+  border-radius: 5px;
+  font-size: 14px;
+}
+#delivery_fill select {
+  flex: 0.55;
+}
+#delivery_fill textarea {
+  flex: 0.75;
+  max-width: 100%;
+  margin: 0;
+  max-height: 33px;
+}
+#delivery_type_address {
+  display: flex;
+  flex: 0.8;
+  margin: auto 0;
+  height: 20px;
+}
+#delivery_type_address input {
+  flex: 0.1;
+}
+#delivery_fill_button {
+  justify-content: center;
+}
+#delivery_fill button {
+  margin: 0 5px;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: white;
+  border: none;
+  width: 90px;
+}
+#cancel {
+  background: rgba(130, 130, 130, 0.45);
+}
+#update {
+  background: #96cb65;
+}
+
+/* right */
+#right {
+  flex: 0.4;
+}
+#right.info {
+    margin-right: 36px;
+}
+#right .info_title {
+  margin-left: 35px;
+}
+
+/* payment */
+.subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  padding-bottom: 6px;
+}
+.payment {
+  margin: 24px 35px;
+}
+.payment p {
+  font-weight: 500;
+  font-size: 16px;
+}
+.payment img {
+  width: 72px;
+}
+#payment{
+  padding-right: 36px;
+}
+
+#payment_info .row {
+  height: 35px;
+}
+#payment_email {
+  margin-bottom: 5px;
+}
+
+.form__choice {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.form__choice input{
+  padding-right: 15px;
+}
+
+.form__choice label{
+  padding-right: 20px;
+}
+
+
+#payment_email .subtitle {
+  flex: 0.2;
+  margin: 9.5px 0;
+}
+#email {
+  flex: 0.8;
+  width: 100%;
+  margin: auto 0;
+  border: 1px solid #96cb65;
+  border-radius: 5px;
+  height: 100%;
+}
+
+
+/* card detail */
+#payment_card_bank {
+  list-style: none;
+  padding: 0;
+}
+#payment_card input {
+  border: 1px solid #96cb65;
+  border-radius: 5px;
+  width: 100%;
+  height: 35px;
+  margin: 8px 0;
+}
+
+/* total */
+#order_total {
+  margin-top: 30px;
+}
+#order_total hr {
+  width: 100%;
+  margin: 16px 0;
+}
+#order_total .detail {
+  padding: 24px 35px;
+}
+#order_total_item {
+  font-weight: 400;
+  font-size: 16px;
+  color: #625f5f;
+}
+#order_voucher {
+  height: 35px;
+  border: 1px solid #96cb65;
+  border-radius: 5px;
+  width: 75%;
+  font-size: 14px;
+}
+#voucher_apply {
+  background: #96cb65;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 5px;
+  color: white;
+  width: 90px;
+  border: none;
+  height: 39px;
+}
+#voucher_apply:hover {
+  background-color: #569232;
+}
+#order_row div {
+  flex: 1;
+}
+#order_row .subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  color: #625f5f;
+}
+.output {
+  text-align: right;
+}
+#submit {
+  width: 100%;
+  background: #ff3c30;
+  box-shadow: 1px 1px 4px rgba(255, 60, 48, 0.25);
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 24px;
+  color: #ffffff;
+  border: none;
+  height: 50px;
+}
+
+/* responsive */
+/* @media only screen and (max-width: 820px) and (min-width: 320px){ */
+
+@media only screen and (max-width: 820px) and (min-width: 320px) {
+  #right {
+    flex: 1;
+  }
+
+  #left {
+    flex: 1;
+  }
+  #order_info {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  .row {
+    padding-top: 10px;
+  }
+  /* .column{
+        display: inline-flex;
+        width: 100%;
+      } */
+  .form__choice {
+      flex-direction: column;
+        
+      }
+}
+@media (min-width:992px) {
+  .footer-content {
+    width: 100vw;
+  }
+}

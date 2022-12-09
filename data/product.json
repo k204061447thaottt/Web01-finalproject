@@ -1,0 +1,205 @@
+[{
+
+    "name": "Blooming dress",
+    "image_url": "https://lh3.google.com/u/0/d/1ZW7BW4XsN0D2sSog1WDLioi-7ViKF61c=w1920-h942-iv1",
+    "url": "",
+    "newPrice": "1.490.000đ", 
+    "oldPrice": "2.090.000đ",   
+    "collection": "Dreamy Girls",
+    "category":"dress",
+    "note": "bestseller"
+},
+
+{
+    
+    "name": "Daisy Dress",
+    "image_url": "https://lh3.google.com/u/0/d/10LzuNPPJLTqzBquw-qIlXH6s8W4WWDyg=w1920-h942-iv1",
+    "url": "",
+    "newPrice": "1.290.000đ",    
+    "oldPrice": "1.690.000đ",
+    "collection": "Dreamy Girls",
+    "category":"dress",
+    "note": "bestseller"
+
+
+},
+{
+    
+    "name": "Dreaming Dress",
+    "image_url": "https://lh3.google.com/u/0/d/1rb3e0eyVPYS_HIBikuPjkdDRZloT2JG7=w1920-h942-iv1",
+    "url": "",
+    "newPrice": "1.890.000đ",    
+    "oldPrice": "2.290.000đ",
+    "collection": "Dreamy Girls",
+    "category":"dress",
+    "note": "bestseller"
+
+
+},
+{
+    
+    "name": "Muse Dress",
+    "image_url": "https://lh3.google.com/u/0/d/1xDFz3Z2mKGJ5tMDz0K6mW2FElIQYRY_Y=w1920-h942-iv1",
+    "url": "",
+    "newPrice": "890.000đ",
+    "oldPrice": "1.090.000đ",
+    "collection": "Dreamy Girls", 
+    "category":"dress",
+    "note": "bestseller"
+
+},
+
+{
+    
+    "name": "Pinky Dress",
+    "image_url": "https://lh3.google.com/u/0/d/1k1it6RcpOhNDPgFfWZcHUqGjMoVuRRVQ=w1920-h942-iv1",
+    "url": "",
+    "newPrice": "1.590.000đ",    
+    "oldPrice": "1.890.000đ",
+    "collection": "Dreamy Girls",
+    "category":"dress",
+    "note":"bestseller"
+
+},
+
+{
+    
+    "name": "Sunflower Dress",
+    "image_url": "https://lh3.google.com/u/3/d/1JzWdQadlGsslhcMpx9oAPKpN6I2JZhWl=w1920-h942-iv1",
+    "url": "",
+    "newPrice": "1.590.000đ",    
+    "oldPrice":"",
+    "collection": "Dreamy Girls",
+    "category":"dress",
+    "note":""
+
+},
+{
+
+    "name": "Winter Sweater",
+    "image_url": "https://lh3.google.com/u/3/d/1JR3vauEQRXfM4UvgaagSgrPJBbVvhTEM=w1920-h942-iv1",
+    "url": "",
+    "newPrice": "1.590.000đ",    
+    "oldPrice":"",
+    "collection": "Dreamy Girls",
+    "category":"sweater",
+    "note":""
+
+},
+{
+
+    "name": "Christmas Dress",
+    "image_url": "https://lh3.google.com/u/3/d/1RP_xFSeGnxxtdKLRCWTJ-NU9oACVBl0x=w1920-h942-iv1",
+    "url": "",
+    "newPrice": "1.290.000đ",    
+    "oldPrice":"999.000đ",
+    "collection": "Dreamy Girls",
+    "category":"dress",
+    "note":""
+
+},
+
+{
+    
+    "name": "Mindi Bloom Tanktop",
+    "image_url": "https://lh3.google.com/u/0/d/12Sij5w229r91-V2Rx5i9sn5Nx3UYOweN=w1920-h942-iv1",
+    "url": "",
+    "newPrice": "359.000đ",
+    "oldPrice": "529.000đ",
+    "collection": "Summer Time",
+    "category":"croptop",
+    "note":""
+
+},
+
+{
+    
+    "name": "Grass Croptop",
+    "image_url": "https://lh3.google.com/u/0/d/1jjqecigNXFoHWtksWilr8mCkgHTQgFAf=w1920-h942-iv1",
+    "url": "",
+    "newPrice": "349.000đ",
+    "oldPrice": "399.000đ",
+    "collection": "Summer Time",
+    "category":"croptop",
+    "note":""
+
+},
+
+{
+    
+    "name": "Blue Sky Croptop",
+    "image_url": "https://lh3.google.com/u/0/d/11IJ8ztIPIKIRicNdUp96bo6bJkdvQ_Lv=w1920-h942-iv1",
+    "url": "",
+    "newPrice": "289.000đ",
+    "oldPrice": "",
+    "collection": "Summer Time",
+    "category":"croptop",
+    "note":""
+
+},
+{
+    
+    "name": "Sports Top",
+    "image_url": "https://lh3.google.com/u/0/d/1SVzWD1K9X7Z_6XgxWd3atRf9y1V1ZXOc=w1920-h942-iv1",
+    "url": "",
+    "newPrice": "199.000đ",
+    "oldPrice": "269.000đ",
+    "collection": "Summer Time",
+    "category":"croptop",
+    "note":""
+
+},
+
+{
+    
+    "name": "Basic Croptop",
+    "image_url": "https://lh3.google.com/u/0/d/1dcKXaRZw3ta7q-ZYtrdQLr2oQs0c-u-a=w1920-h942-iv1",
+    "url": "",
+    "newPrice": "129.000đ",
+     "oldPrice": "",
+    "collection": "Summer Time",
+    "category":"croptop",
+    "note":""
+
+},
+{ 
+    
+    "name": "Ocean Dress",
+    "image_url": "https://lh3.google.com/u/3/d/1t2sKYcTQVuz6Nlj_N4XVPaka3zMSkhnC=w1920-h942-iv1",
+    "url": "",
+    "newPrice": "439.000đ",
+     "oldPrice": "",
+    "collection": "Summer Time",
+    "category":"dress",
+    "note":""
+
+},
+{
+    
+    "name": "Rainbow Croptop",
+    "image_url": "https://lh3.google.com/u/3/d/1B9fbDCCjexZ2Mq0ILzw3SBmIPp_oqgol=w1920-h942-iv1",
+    "url": "",
+    "newPrice": "159.000đ",
+     "oldPrice": "",
+    "collection": "Summer Time",
+    "category":"croptop",
+    "note":"bestseller"
+
+},
+
+
+
+{
+    
+    "name": "Orange T-shirt",
+    "image_url": "https://lh3.google.com/u/3/d/1StVWYYl5rgHjLxkzEuREFmWs2zzusbZz=w1920-h942-iv1",
+    "url": "",
+    "newPrice": "129.000đ",
+     "oldPrice": "",
+    "collection": "Summer Time",
+    "category":"top",
+    "note":""
+
+}
+
+]
